@@ -1,0 +1,57 @@
+.datetime {
+	width: 100%;
+	z-index: 1000;
+	padding: 10px;
+	position: relative;
+	text-shadow: 0 0 20px RGBA(0,0,0,.9);
+	background: RGBA(0,0,0,.5);
+
+    &__time {
+    	font-size: 4em;
+    }
+
+    &__date {
+    	font-size: 1em;
+    }
+
+    &__hours {
+    	margin: 2px;
+    }
+
+    &__minutes {
+    	margin: 2px;
+    }
+
+    &__seconds-ampm {
+    	display: inline-block;
+    	vertical-align: middle;
+    	margin-left: 5px;
+    }
+
+    &__seconds {
+    	font-size: .5em;
+    	display: block;
+    	border-bottom: 5px solid;
+    }
+
+    &__ampm {
+    	font-size: .5em;
+    	text-transform: uppercase;
+    	display: block;
+    }
+
+    &__month {
+    	margin: 5px;
+    	margin-right: 10px;
+    }
+
+    &__day {
+    	margin: 5px;
+    	margin-right: 0;
+    }
+
+    &__year {
+    	margin: 5px;
+    	margin-left: 10px;
+    }
+}
