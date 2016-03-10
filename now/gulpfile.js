@@ -88,7 +88,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('webserver', function() {
-  	gulp.src('../react-test')
+  	gulp.src('../now')
     	.pipe(webserver({
       		livereload: true,
       		directoryListing: false,

@@ -3,11 +3,15 @@ var ReactDOM = require('react-dom');
 
 var weather = React.createClass({
     componentDidMount: function() {
-        var me = this;
-        this.getGeolocation(function() {
-            me.getCurrentConditions();
-            me.getForecast();
-        })
+        var me = this,
+            weather = function() {
+                me.getGeolocation(function() {
+                    me.getCurrentConditions();
+                    me.getForecast();
+                });
+            };
+        setInterval(weather, 1800000);
+        weather();
     },
 
     getGeolocation: function(cb) {
@@ -30,7 +34,7 @@ var weather = React.createClass({
         };
     },
 
-    getForecast: function(cb) {
+    getForecast: function() {
 
         var httpRequest = new XMLHttpRequest(),
             me = this;
