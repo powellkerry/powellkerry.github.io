@@ -77,6 +77,8 @@ var weather = React.createClass({
                 me.setState({
                     forecast: forcastFinal
                 });
+            } else {
+                me.getForecast();
             }
         };
         httpRequest.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?lat='+me.lat+'&lon='+me.lon+'&appid=f747420b55e6e83756c0744cdd19882f&units=imperial&type=accurate');
@@ -98,6 +100,8 @@ var weather = React.createClass({
                         weather: response.weather[0].icon
                     }
                 });
+            } else {
+                me.getCurrentConditions();
             }
         };
         httpRequest.open('GET', 'http://api.openweathermap.org/data/2.5/weather?lat='+me.lat+'&lon='+me.lon+'&appid=f747420b55e6e83756c0744cdd19882f&units=imperial&type=accurate');

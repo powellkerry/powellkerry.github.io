@@ -1,10 +1,10 @@
 .datetime {
 	width: 100%;
 	z-index: 1000;
-	padding: 10px;
+	padding: $padding;
 	position: relative;
-	text-shadow: 0 0 20px RGBA(0,0,0,.9);
-	background: RGBA(0,0,0,.5);
+	background: $transparentBackground;
+	margin-bottom: $spacing;
 
     &__time {
     	font-size: 4em;
@@ -25,7 +25,7 @@
     &__seconds-ampm {
     	display: inline-block;
     	vertical-align: middle;
-    	margin-left: 5px;
+    	margin: $spacing;
     }
 
     &__seconds {
@@ -41,17 +41,15 @@
     }
 
     &__month {
-    	margin: 5px;
-    	margin-right: 10px;
+    	margin: $spacing;
     }
 
     &__day {
-    	margin: 5px;
-    	margin-right: 0;
+    	margin: $spacing;
+		margin-right: 0;
     }
 
     &__year {
-    	margin: 5px;
-    	margin-left: 10px;
+    	margin: $spacing;
     }
 }

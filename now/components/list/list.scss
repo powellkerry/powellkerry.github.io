@@ -6,6 +6,7 @@
 	padding: 40px;
 	text-align: left;
 	vertical-align: top;
+	background: $transparentBackground;
 
 	h2 {
 		margin-top: 0;
@@ -13,7 +14,7 @@
 	}
 
 	&:not(:last-child) {
-		border-right: 1px solid #fff;
+		margin-right: $spacing;
 	}
 
     &-container {
@@ -24,24 +25,39 @@
     ul {
     	list-style: none;
     	padding: 0;
-    	padding-bottom: 20px;
+    	padding-bottom: $padding;
     	margin: 0;
-    	margin-bottom: 20px;
-    	border-bottom: 5px solid #FFF;
+    	margin-bottom: $spacing;
+    	border-bottom: 1px solid #FFF;
     }
 
+	&__add-input {
+		border-radius: 5px;
+		outline: none;
+		border: 1px solid #000;
+		padding: 5px;
+		width: calc(100% - 70px);
+	}
+
     input[type=checkbox] {
-    	margin-right: 10px;
-    	margin-top: 5px;
+    	margin-right: $spacing;
+    	margin-top: $spacing/2;
     	vertical-align: top;
     }
 
-    button {
+    &__button {
     	background: #FFF;
     	outline: none;
-    	border-radius: 0;
+    	border-radius: 5px;
     	border: none;
     	margin: 0 5px;
+		padding: 5px;
     	text-transform: uppercase;
+
+		&--remove {
+			float: right;
+			margin-left: 40px;
+			vertical-align: middle;
+		}
     }
 }

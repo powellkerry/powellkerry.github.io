@@ -1,15 +1,15 @@
 .weather {
 	z-index: 1000;
 	color: #FFF;
-	padding: 40px;
+	padding: $padding;
 	flex: 0 0 100%;
 	text-align: center;
-	border-bottom: 1px solid #fff;
+	margin-bottom: $spacing;
 	min-height: 100px;
+	background: $transparentBackground;
 
     &__temp, &__day {
     	vertical-align: middle;
-    	text-shadow: 0 0 20px RGBA(0,0,0,.9);
     }
 
     &__icon {
@@ -20,16 +20,17 @@
 
 	&--current {
 		display: inline-block;
+		margin-right: $spacing;
 	}
 
 	&--forecast {
 		display: inline-block;
 		border-left: 1px solid #FFF;
-		margin-left: 20px;
-		
+		margin-left: $spacing;
+
 		&__item {
 			display: inline-block;
-			margin: 0 20px;
+			margin: 0 $spacing;
 		}
 	}
 }
