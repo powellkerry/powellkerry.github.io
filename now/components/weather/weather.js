@@ -39,13 +39,13 @@ var weather = React.createClass({
         var icon;
         iconName = iconName.split("/").pop();
         switch(true) {
-            case iconName == 'skc.png' || iconName == 'few.png':
+            case iconName.indexOf('skc') !== -1 || iconName.indexOf('few') !== -1:
                 icon="01d";
                 break;
             case iconName.indexOf('sct') !== -1:
                 icon='02d';
                 break;
-            case iconName =='bkn.png':
+            case iconName.indexOf('bkn') !== -1:
                 icon = '03d';
                 break;
             case iconName.indexOf('ov') !== -1:
