@@ -27,13 +27,12 @@ var quote = React.createClass({
 
         httpRequest.onloadend = function() {
             if (httpRequest.status === 200 && httpRequest.responseText) {
-                var response = JSON.parse(httpRequest.responseText);
-                console.log(response)
-                var quote = {
-                    text: response.contents.quotes[0].quote,
-                    author: response.contents.quotes[0].author,
-                    date: new Date()
-                }
+                var response = JSON.parse(httpRequest.responseText),
+                    today = new Date().toLocaleDateString();
+                var quote = response.filter(function(q) {
+                    return new Date(q.date).toLocaleDateString() === today;
+                })[0]
+                
                 me.setState({
                     quote: quote
                 });
@@ -42,7 +41,7 @@ var quote = React.createClass({
                 //me.loadQuote();
             }
         };
-        httpRequest.open('GET', 'http://quotes.rest/qod.json');
+        httpRequest.open('GET', './components/quote/quotes.json');
         if (httpRequest.status === 0) {
             httpRequest.send();
         }

@@ -35,10 +35,10 @@ module.exports = React.createClass({
   },
   createItem: function(item) {
     return (
-        <li key={item.id}>
+        <li key={item.id} className="list__item">
             <label>
                 <input type="checkbox" id={item.id} checked={item.checked} onChange={this.checkChange}/>
-                {item.text}
+                <span className="list__item__label">{item.text}</span>
             </label>
         </li>
     );
@@ -47,7 +47,7 @@ module.exports = React.createClass({
     this.state.items = JSON.parse(window.localStorage.getItem(this.props.id)) || [];
     return (
         <div className="list">
-            <h2>{this.props.header} <button className="list__button list__button--remove" onClick={this.clearChecked}>Remove Checked</button></h2>
+            <h2>{this.props.header} <button className="list__button list__button--remove" onClick={this.clearChecked}>Remove</button></h2>
             <ul>{this.state.items.map(this.createItem)}</ul>
             <form onSubmit={this.handleSubmit}>
                 <input className="list__add-input" onChange={this.onChange} value={this.state.text} />

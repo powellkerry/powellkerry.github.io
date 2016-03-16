@@ -8,6 +8,9 @@
 	vertical-align: top;
 	background: $transparentBackground;
 	margin-bottom: $spacing;
+	max-width: 400px;
+	width: 320px;
+	box-sizing: border-box;
 
 	h2 {
 		margin-top: 0;
@@ -40,11 +43,19 @@
 		width: calc(100% - 70px);
 	}
 
-    input[type=checkbox] {
-    	margin-right: $spacing;
-    	margin-top: $spacing/2;
-    	vertical-align: top;
-    }
+	&__item {
+		&__label {
+			display: inline-block;
+			max-width: calc(100% - 50px);
+			margin-left: $spacing;
+		}
+
+	    input[type=checkbox] {
+	    	margin-right: $spacing;
+	    	margin-top: $spacing/2;
+	    	vertical-align: top;
+	    }
+	}
 
     &__button {
     	background: #FFF;
@@ -57,7 +68,6 @@
 
 		&--remove {
 			float: right;
-			margin-left: 40px;
 			vertical-align: middle;
 		}
     }
