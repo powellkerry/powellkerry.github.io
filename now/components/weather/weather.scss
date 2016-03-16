@@ -4,8 +4,10 @@
 	text-align: center;
 	margin-bottom: $spacing;
 	min-height: 100px;
-	background: $transparentBackground;
+	//background: $transparentBackground;
 	display: inline-block;
+	font-size: .5em;
+	border-top: 1px solid #FFF;
 
 	@media (min-width: $breakpoint--large) {
 		display: block;

@@ -1,6 +1,8 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+import Weather from '../weather/weather.js';
+
 module.exports = React.createClass({
 	getInitialState: function() {
 		return this.getDateTime();
@@ -44,6 +46,7 @@ module.exports = React.createClass({
 			    		<span className="datetime__ampm">{this.state.ampm}</span>
 		    		</span>
 				</div>
+				<Weather />
 			</h1>
 		);
 	}
