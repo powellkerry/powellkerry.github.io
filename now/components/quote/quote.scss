@@ -1,0 +1,20 @@
+.quote {
+	color: #FFF;
+	padding: $padding;
+	text-align: center;
+	margin-top: $spacing;
+    text-shadow: 1px 1px 5px #000;
+	flex: 0 0 100%;
+	box-sizing: border-box;
+	align-self: flex-end;
+
+    &__text {
+        font-size: 1.5em;
+        font-style: italic;
+        margin-bottom: 5px;
+    }
+
+    &__author {
+        //margin-left: 100px;
+    }
+}

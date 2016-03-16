@@ -4,8 +4,9 @@
 	align-items: center;
 	text-align: center;
 	flex-wrap: wrap;
+	box-shadow: 0 -208px 300px -150px #000 inset;
 
 	&__wrapper {
-		display: inline-block;
+		flex: 0 0 100%;
 	}
 }

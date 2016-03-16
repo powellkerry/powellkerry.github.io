@@ -1,12 +1,15 @@
 .weather {
-	z-index: 1000;
 	color: #FFF;
 	padding: $padding;
-	flex: 0 0 100%;
 	text-align: center;
 	margin-bottom: $spacing;
 	min-height: 100px;
 	background: $transparentBackground;
+	display: inline-block;
+
+	@media (min-width: $breakpoint--large) {
+		display: block;
+	}
 
     &__temp, &__day {
     	vertical-align: middle;
@@ -19,18 +22,31 @@
     }
 
 	&--current {
-		display: inline-block;
-		margin-right: $spacing;
+		border-bottom: 1px solid #FFF;
+		margin-bottom: $spacing;
+
+		@media (min-width: $breakpoint--large) {
+			display: inline-block;
+			margin-right: $spacing;
+			margin-bottom: 0;
+			border-bottom: 0;
+		}
 	}
 
 	&--forecast {
-		display: inline-block;
-		border-left: 1px solid #FFF;
-		margin-left: $spacing;
+		@media (min-width: $breakpoint--large) {
+			display: inline-block;
+			border-left: 1px solid #FFF;
+			margin-left: $spacing;
+		}
 
 		&__item {
-			display: inline-block;
-			margin: 0 $spacing;
+			margin-bottom: $spacing * 2;
+
+			@media (min-width: $breakpoint--large) {
+				display: inline-block;
+				margin: 0 $spacing;
+			}
 		}
 	}
 }

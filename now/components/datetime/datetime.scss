@@ -1,13 +1,18 @@
 .datetime {
-	width: 100%;
-	z-index: 1000;
 	padding: $padding;
-	position: relative;
 	background: $transparentBackground;
 	margin-bottom: $spacing;
+	margin-top: 0;
+	font-weight: 300;
+	flex: 0 0 100%;
+	align-self: flex-end;
+	box-sizing: border-box;
 
     &__time {
-    	font-size: 4em;
+		font-size: 2em;
+		@media (min-width: $breakpoint--medium) {
+    		font-size: 4em;
+		}
     }
 
     &__date {
