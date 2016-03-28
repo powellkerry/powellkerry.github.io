@@ -23,6 +23,11 @@
     	vertical-align: middle;
     }
 
+	&__location {
+		font-size: .75em;
+		margin-top: 15px;
+	}
+
 	&--current {
 		border-bottom: 1px solid #FFF;
 		margin-bottom: $spacing;

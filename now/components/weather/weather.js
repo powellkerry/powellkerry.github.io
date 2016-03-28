@@ -27,10 +27,7 @@ var weather = React.createClass({
 
     getInitialState: function() {
         return {
-            conditions: {
-                tempString: 'Loading',
-                weather: 'unknown',
-            },
+            conditions: false,
             forecast: []
         };
     },
@@ -85,7 +82,6 @@ var weather = React.createClass({
                         weekday: dt.toLocaleDateString(navigator.language, {weekday: 'long'}),
                         weather: me.getIcon(response.data.iconLink[index]),
                         title: response.data.weather[index]
-
                     }
 
                     var existing = forcastFinal.filter(function(e) {
@@ -102,9 +98,10 @@ var weather = React.createClass({
                         forcastFinal.push(weather);
                     }
                 })
-
+                console.log(response.productionCenter);
                 me.setState({
                     forecast: forcastFinal,
+                    location: response.productionCenter,
                     conditions: {
                         temp: response.currentobservation.Temp,
                         weather: me.getIcon(response.currentobservation.Weatherimage)
@@ -133,16 +130,22 @@ var weather = React.createClass({
     render: function() {
         return (
             <div className="weather">
-                <div className="weather--current">
-                    <div className="weather__day">Current</div>
-                    <div><img className="weather__icon" src={'./weather-icons/'+this.state.conditions.weather+'.png'}/></div>
-                    <span className="weather__temp">{this.state.conditions.temp}&deg;</span>
+                <If test={this.state.conditions}>
+                    <div className="weather--current">
+                        <div className="weather__day">Current</div>
+                        <div><img className="weather__icon" src={'./weather-icons/'+this.state.conditions.weather+'.png'}/></div>
+                        <span className="weather__temp">{this.state.conditions.temp}&deg;</span>
 
-                </div>
+                    </div>
+                </If>
 
                 <div className="weather--forecast">
                     {this.state.forecast.map(this.getForecastDay)}
                 </div>
+
+                <If test={this.state.location}>
+                    <div className="weather__location">Weather for: {this.state.location}</div>
+                </If>
             </div>
 
         );
