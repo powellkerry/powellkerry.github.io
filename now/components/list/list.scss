@@ -19,7 +19,9 @@
 	}
 
 	&:not(:last-child) {
-		margin-right: $spacing;
+		@media (min-width: $breakpoint--large) {
+			margin-right: $spacing;
+		}
 	}
 
     &-container {

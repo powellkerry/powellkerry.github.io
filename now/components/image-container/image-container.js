@@ -17,6 +17,7 @@ module.exports = React.createClass({
     	    		<div className="list-container">
     		    		<List header="To Do" id="toDo" />
     		    		<List header="Stretch Goals" id="stretch" />
+                        <List header="Questions" id="questions" />
     	    		</div>
                 </div>
                 <Quote />

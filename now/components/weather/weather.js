@@ -98,7 +98,6 @@ var weather = React.createClass({
                         forcastFinal.push(weather);
                     }
                 })
-                console.log(response.productionCenter);
                 me.setState({
                     forecast: forcastFinal,
                     location: response.productionCenter,
