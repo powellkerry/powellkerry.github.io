@@ -4,15 +4,7 @@ var ReactDOM = require('react-dom');
 var quote = React.createClass({
 
     componentDidMount: function() {
-        var quote = JSON.parse(window.localStorage.getItem('quote')) || {};
-        if (!quote.text || new Date(quote.date).setHours(new Date(quote.date).getHours() + 24) < new Date()) {
-            this.loadQuote();
-        } else {
-            this.setState({
-                quote: quote
-            });
-        }
-        setInterval(this.loadQuote,86400000);
+        this.loadQuote();
     },
 
     getInitialState: function() {
@@ -27,18 +19,16 @@ var quote = React.createClass({
 
         httpRequest.onloadend = function() {
             if (httpRequest.status === 200 && httpRequest.responseText) {
-                var response = JSON.parse(httpRequest.responseText),
-                    today = new Date().toLocaleDateString();
+                var response = JSON.parse(httpRequest.responseText);
                 var quote = response.filter(function(q) {
-                    return new Date(q.date).toLocaleDateString() === today;
+                    return new Date(q.date).toLocaleDateString() === new Date().toLocaleDateString();
                 })[0]
-                
+
                 me.setState({
                     quote: quote
                 });
-                window.localStorage.setItem('quote', JSON.stringify(quote));
             } else {
-                //me.loadQuote();
+                me.loadQuote();
             }
         };
         httpRequest.open('GET', './components/quote/quotes.json');
