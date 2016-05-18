@@ -47,11 +47,11 @@ module.exports = React.createClass({
     this.state.items = JSON.parse(window.localStorage.getItem(this.props.id)) || [];
     return (
         <div className="list">
-            <h2>{this.props.header} <button className="list__button list__button--remove" onClick={this.clearChecked}>Remove</button></h2>
+            <h2>{this.props.header} <button className="list__button list__button--remove" onClick={this.clearChecked}><img src={'./icons/trash.svg'}/></button></h2>
             <ul>{this.state.items.map(this.createItem)}</ul>
             <form onSubmit={this.handleSubmit}>
                 <input className="list__add-input" onChange={this.onChange} value={this.state.text} />
-                <button className="list__button">Add</button>
+                <button className="list__button"><img src={'./icons/add.svg'}/></button>
             </form>
         </div>
     );

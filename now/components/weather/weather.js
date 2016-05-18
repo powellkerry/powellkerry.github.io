@@ -120,7 +120,7 @@ var weather = React.createClass({
         return (
             <div key={day.datetime} className="weather--forecast__item">
                 <div className="weather__day">{day.weekday}</div>
-                <div><img title={day.title} className="weather__icon" src={'./weather-icons/'+day.weather+'.png'}/></div>
+                <div><img title={day.title} className="weather__icon" src={'./icons/'+day.weather+'.png'}/></div>
                 <span className="weather__temp">{day.high}&deg;<If test={day.low}><span>/{day.low}&deg;</span></If></span>
             </div>
         )
@@ -132,7 +132,7 @@ var weather = React.createClass({
                 <If test={this.state.conditions}>
                     <div className="weather--current">
                         <div className="weather__day">Current</div>
-                        <div><img className="weather__icon" src={'./weather-icons/'+this.state.conditions.weather+'.png'}/></div>
+                        <div><img className="weather__icon" src={'./icons/'+this.state.conditions.weather+'.png'}/></div>
                         <span className="weather__temp">{this.state.conditions.temp}&deg;</span>
 
                     </div>
