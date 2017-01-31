@@ -1,53 +1,108 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
+$spacing--100: 10px;
+$spacing--300: 20px;
+$spacing--500: 40px;
+$color__gray--light: #eee;
+$color__gray--dark: #5a5a5a;
 
 
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: $color__gray--dark;
+}
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+main {
+    @media screen and (min-width: 800px) {
+        width: 800px;
+        overflow: none;
+        margin: 0px auto;
+    }
+}
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
 
 
+a {
+    padding: $spacing--300;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    margin: 0px auto;;
+    color: $color__gray--dark;
+    border-bottom: 1px solid $color__gray--light;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+    @media screen and (min-width: 800px) {
+        display: inline-block;
+        border-bottom: 0;
+        border-right: 1px solid $color__gray--light;
+        padding: 0 $spacing--300;
+    }
+
+    &:last-child {
+        border-bottom: 0;
+
+        @media screen and (min-width: 800px) {
+            border-right: 0;
+        }
+    }
+
+    &:visited, &:hover, &:active {
+        color: $color__gray--dark;
+        text-decoration: none;
+    }
+
+    &:hover {
+        font-weight: bold;
     }
 }
 
 
+.site-header {
+    border-bottom: 1px solid $color__gray--light;
+    padding: $spacing--500;
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+    h2 {
+        font-size: .85rem;
+    }
+}
+
+.site-nav {
+    padding: $spacing--500;
+    text-align: center;
+
+    a {
+
+    }
+}
+
+section {
+    padding: $spacing--500;
+
+    h3 {
+        margin-bottom: $spacing--300;
+    }
+
+    p {
+        margin-bottom: $spacing--500;
+        display: block;
+    }
+    .pre {
+        white-space: pre-line;
+    }
+}
+
+.resume {
+    &__item {
+        margin-bottom: $spacing--500;
+    }
+}
+
+footer {
+    border-top: 1px solid $color__gray--light;
+    padding: $spacing--500;
+    text-align: center;
+}
