@@ -20,7 +20,6 @@ module.exports = React.createClass({
                         <List header="Questions" id="questions" />
     	    		</div>
                 </div>
-                <Quote />
     		</div>
         </Image>
 	);
