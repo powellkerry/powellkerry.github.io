@@ -11,7 +11,6 @@ var browserSync = require('browser-sync'),
 	rename = require('gulp-rename'),
 	sourcemaps = require('gulp-sourcemaps'),
 	sass = require('gulp-sass'),
-	cmq = require('gulp-combine-media-queries'),
 	autoprefixer = require('gulp-autoprefixer'),
 	browserify = require('browserify'),
 	babelify = require('babelify'),
@@ -61,7 +60,6 @@ gulp.task('styles', function() {
 			path.basename = path.basename.replace('main', 'all');
 			path.extname = '.min.css';
 		}))
-		.pipe(cmq())
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
@@ -75,7 +73,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('scripts', function() {
-	return browserify('main.js', {debug: true}).transform(babelify, {presets: ['es2015', 'react']}).bundle()
+	return browserify('main.js', {debug: true}).transform(babelify, {presets: ['es2017']}).bundle()
 			.pipe(source('app.js'))
 			.pipe(buffer())
 			.pipe(rename('app.min.js'))

@@ -1,53 +1,99 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+class DateTime extends HTMLElement {
+	constructor() {
+		super();
+		let tpl = document.createElement('template');
+		tpl.innerHTML = `
+			<style>
+				.datetime {
+					color: #fff;
+					display: none;
+				}
 
-import Weather from '../weather/weather.js';
+				.datetime__container {
+					padding: 18px;
+					background: #333;
+					display: inline-block;
+					height: 100%;
+					vertical-align: top;
+				}
 
-module.exports = React.createClass({
-	getInitialState: function() {
-		return this.getDateTime();
-	},
-	getDateTime: function() {
-		var time = new Date();
-		return {
-			hours: time.getHours() % 12 || 12,
-			minutes: ("0"+time.getMinutes()).slice(-2),
-			seconds: ("0"+time.getSeconds()).slice(-2),
-			ampm: time.getHours() > 12 ? 'pm': 'am',
-			date: time.getDate(),
-			month: time.toLocaleString(navigator.language, {month: 'long'}),
-			year: time.getFullYear()
+				.datetime__time {
+					font-size: 1.3em;
+				}
 
-		};
-	},
-	tick: function() {
-		this.setState(this.getDateTime());
-	},
-	componentDidMount: function() {
-		this.interval = setInterval(this.tick, 1000);
-	},
-	componentWillUnmount: function() {
-		clearInterval(this.interval);
-	},
+				.datetime__date {
+					font-size: .45em;
+				}
 
-	render: function() {
-		return (
-			<h1 className="datetime">
-				<div className="datetime__date">
-		    		<span className="datetime__month">{this.state.month}</span>
-		    		<span className="datetime__day">{this.state.date}</span>,
-		    		<span className="datetime__year">{this.state.year}</span>
+				.datetime__ampm {
+					text-transform: uppercase;
+					font-size: .6em;
+				}
+
+				.datetime__weather {
+					display: inline-block;
+					background: #333;
+					height: 100%;
+				}
+			</style>
+			<h1 class="datetime">
+				<div class="datetime__container">
+					<div class="datetime__time">
+						<span class="datetime__hour"></span>:<span class="datetime__minutes"></span>
+						<span class="datetime__ampm"></span>
+					</div>
+					<div class="datetime__date">
+						<span class="datetime__month"></span>
+						<span class="datetime__day"></span>,
+						<span class="datetime__year"></span>
+					</div>
 				</div>
-				<div className="datetime__time">
-		    		<span className="datetime__hours">{this.state.hours}</span>:
-		    		<span className="datetime__minutes">{this.state.minutes}</span>:
-		    		<span className="datetime__seconds-ampm">
-			    		<span className="datetime__seconds">{this.state.seconds}</span>
-			    		<span className="datetime__ampm">{this.state.ampm}</span>
-		    		</span>
+				<div class="datetime__weather">
+					<weather-forcast></weather-forcast>
 				</div>
-				<Weather />
 			</h1>
-		);
+		`;
+		let shadowRoot = this.attachShadow({mode: 'open'});
+		shadowRoot.appendChild(tpl.content.cloneNode(true));
 	}
-});
+
+	setMonth(time) {
+		this.shadowRoot.querySelector('.datetime__month').innerHTML = time.toLocaleString(navigator.language, {month : 'long'});
+	}
+
+	setDate(time) {
+		this.shadowRoot.querySelector('.datetime__day').innerHTML = time.getDate();
+	}
+
+	setYear(time) {
+		this.shadowRoot.querySelector('.datetime__year').innerHTML = time.getFullYear();
+	}
+
+	setHour(time) {
+		this.shadowRoot.querySelector('.datetime__hour').innerHTML = time.getHours() % 12 || 12;
+	}
+
+	setMinutes(time) {
+		this.shadowRoot.querySelector('.datetime__minutes').innerHTML = ("0"+time.getMinutes()).slice(-2);
+	}
+
+	setAMPM(time) {
+		this.shadowRoot.querySelector('.datetime__ampm').innerHTML = time.getHours() > 12 ? 'pm' : 'am';
+	}
+
+	connectedCallback() {
+		let me = this;
+		setInterval(() => {
+			var time = new Date();
+			me.setMonth(time);
+			me.setDate(time);
+			me.setYear(time);
+			me.setHour(time);
+			me.setMinutes(time);
+			me.setAMPM(time);
+			me.shadowRoot.querySelector('.datetime').style = 'display: block;';
+		}, 1000);
+
+	}
+}
+customElements.define('date-time', DateTime);
