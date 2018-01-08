@@ -123,9 +123,7 @@ class Weather extends HTMLElement {
     }
 
 	getIcon(iconName) {
-
         var icon;
-        iconName = iconName.split("/").pop();
         switch(true) {
             case iconName.indexOf('skc') !== -1 || iconName.indexOf('few') !== -1:
                 icon="01d";
@@ -148,7 +146,7 @@ class Weather extends HTMLElement {
             case iconName.indexOf('sn') !== -1:
                 icon = '13d';
                 break;
-			case iconName.indexOf('hz') !== -1:
+			case iconName.indexOf('hz') !== -1 || iconName.indexOf('fg') !== -1:
 				icon="14d";
 				break;
             default:
