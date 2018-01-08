@@ -225,7 +225,7 @@ class Weather extends HTMLElement {
                 me.getForecast();
             }
         };
-        httpRequest.open('GET', 'http://forecast.weather.gov/MapClick.php?lat='+me.lat+'&lon='+me.lon+'&unit=0&lg=english&FcstType=json');
+        httpRequest.open('GET', 'https://forecast.weather.gov/MapClick.php?lat='+me.lat+'&lon='+me.lon+'&unit=0&lg=english&FcstType=json');
         if (httpRequest.status === 0) {
             httpRequest.send();
         }

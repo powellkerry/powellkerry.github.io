@@ -91,7 +91,7 @@ class DateTime extends HTMLElement {
 			me.setHour(time);
 			me.setMinutes(time);
 			me.setAMPM(time);
-			me.shadowRoot.querySelector('.datetime').style = 'display: block;';
+			me.shadowRoot.querySelector('.datetime').style = 'display: inline-block;';
 		}, 1000);
 
 	}

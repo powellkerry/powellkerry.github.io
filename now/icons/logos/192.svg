@@ -1,0 +1,9 @@
+<svg width="192px" height="192px" viewBox="0 0 192 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <path d="M96,192 C42.980664,192 0,149.019336 0,96 C0,42.980664 42.980664,0 96,0 C149.019336,0 192,42.980664 192,96 C192,149.019336 149.019336,192 96,192 Z M96.375,183 C144.423773,183 183.375,144.048773 183.375,96 C183.375,47.9512268 144.423773,9 96.375,9 C48.3262268,9 9.375,47.9512268 9.375,96 C9.375,144.048773 48.3262268,183 96.375,183 Z" id="Combined-Shape" fill="#1483B5"></path>
+            <rect id="Rectangle" fill="#626262" x="96" y="55.125" width="6" height="49.875"></rect>
+            <rect id="Rectangle" fill="#626262" transform="translate(131.250000, 102.000000) rotate(90.000000) translate(-131.250000, -102.000000) " x="128.25" y="66.75" width="6" height="70.5"></rect>
+        </g>
+    </g>
+</svg>
