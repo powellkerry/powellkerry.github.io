@@ -18,7 +18,7 @@
         <p>Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
         <div class="footer-container"></div>
         <script>
-            fetch('https://rootstech-test.lds.org/header-footer').then(function(res) {
+            fetch('//www.rootstech.org/header-footer').then(function(res) {
                 res.json().then(function(data) {
                     document.querySelector('.header-container').innerHTML = data.headerHtml;
                     document.querySelector('.footer-container').innerHTML = data.footerHtml;
