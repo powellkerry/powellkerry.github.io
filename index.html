@@ -1,34 +1,37 @@
 <!doctype html>
-<html>
+<html lang="en-US">
     <head>
         <title>Kerry Powell : Profile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#47555E">
+        <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans:bolditalic|Open+Sans:italic|Open+Sans:bold">
+        <link rel="manifest" href="/manifest.json">
         <link rel="stylesheet" href="/css/main.css"/>
     </head>
 
     <body>
         <header class="site-header">
-            <h1>Kerry Powell</h1>
-            <h2>Front-End Web-Developer</h2>
+            <div class="site-header__logo-container">
+                <img src="/images/logo.png" class="site-header__logo" alt="Kerry Powell - logo"/>
+            </div>
+            <nav class="site-header__nav">
+                    <a href="#profile">Profile</a>
+                    <a href="#resume">Work History</a>
+                    <a href="#education">Education</a>
+                    <a href="#accomplishments">Accomplishments</a>
+                </nav>
         </header>
 
-        <nav class="site-nav">
-            <a href="#profile">Profile</a>
-            <a href="#resume">Work History</a>
-        </nav>
+        
         <main>
             <section id="profile">
                 <h3>Profile</h3>
                 <p>
-                    My wife and I live in South Jordan, Utah where I enjoy doing home improvements and yard work. I also enjoy reading and playing the piano and organ.
-                    Professionally I have been working as a Front-End Web Developer since 2009, and have worked at companies like the Space Dynamics Laboratory, Western Governors University, and the Church of Jesus Christ of Latter-day Saints.
+                    I am a highly motivated front-end web developer with over 10 years of experience. My experience includes working with technologies and languages such as ReactJS, NextJS, Progressive Web Apps, Accessibility including ARIA, CSS Next, Post CSS, Handlebars, Gulp, Sass, NodeJS, etc.
                 </p>
                 <p>
-                    I am currently employed with the LDS church where I enjoy working on church education, welfare, and family history sites. These sites are translated into hundreds of languages and receive a high amount of traffic daily.
-                </p>
-                <p>
-                    My most important role is that of husband, and I hope eventually father. Family is the most important thing for me, and they give me the most strength.
+                    I live in South Jordan, Utah where I enjoy spending time with my family, the occasional wood working project, and doing home improvements.
                 </p>
             </section>
 
@@ -36,71 +39,119 @@
                 <h3>Work History</h3>
 
                 <div class="resume__item">
-                    <h4 class="resume__item__title">The Church of Jesus Christ of Latter-day Saints <em>2015-Current</em></h4>
-                    <p class="resume__item__summary">NodeJS, Handlebars, Sass/CSS, ES6 (Native JS)</p>
-                    <ul>
-                        <li>Built high profile sites for lds.org which enabled publishers to quickly update and release content</li>
-                        <li>Gained experience with NodeJS and data transforms</li>
-                        <li>Gained experience with ES6 and native JavaScript</li>
-                        <li>Participated in building a component architecture for easy maintainability</li>
-                    </ul>
-                </div>
-
-                <div class="resume__item">
-                    <h4 class="resume__item__title">Graduation Alliance - Contract <em>July 2015</em></h4>
-                    <p class="resume__item__summary">AngularJS, Sass/CSS, HTML, Grunt, Twitter Bootstrap, Jasmine</p>
-                    <ul>
-                        <li>Built the front-end for a new Integrated Learning Plan system</li>
-                        <li>Designed and developed dynamic pages using rough wireframes</li>
-                        <li>Strategically built file structures and developed code for a growing site architecture</li>
-                        <li>Developed JavaScript unit tests to assist in quality assurance</li>
-                        <li>Developed object oriented JavaScript including custom angular filters and directives</li>
-                        <li>Configured Grunt to compile and minimize code for production</li>
-                        <li>Developed a language localization strategy and framework</li>
-                    </ul>
-                </div>
-
-                <div class="resume__item">
-                    <h4 class="resume__item__title">Western Governors University - Contract <em>2014 - 1015</em></h4>
-                    <p class="resume__item__summary">SASS/CSS, HTML, Grunt, AngularJS</p>
-                    <ul>
-                        <li>Planned and developed a standard SASS/CSS and JavaScript framework to be used across all pages on the WGU student portal</li>
-                        <li>Developed documentation to support future front-end development</li>
-                        <li>Standardized the student portal and converted antiquated code to AngularJS, HTML5 and SASS</li>
-                    </ul>
-                </div>
-
-                <div class="resume__item">
-                    <h4 class="resume__item__title">The Church of Jesus Christ of Latter-Day Saints - Contract <em>2013-2014</em></h4>
-                    <p class="resume__item__summary">SASS/CSS, HTML, Sencha Touch/JavaScript, and Java-Spring</p>
-                    <ul>
-                        <li>Developed key features of the mobile Area Book Planner application which include:
+                    <div class="drawer">
+                        <div class="drawer__toggle">
+                            <h4 class="resume__item__title">The Church of Jesus Christ of Latter-day Saints <em>2015-Current</em></h4>
+                            <p class="resume__item__summary">NodeJS, Handlebars, ReactJS, nextJS, Progressive Web Applications, CSS next, Sass/CSS, ES6 (Native JS)</p>
+                        </div>
+                        <div class="drawer__body">
                             <ul>
-                                <li>Recording the teaching of online investigators</li>
-                                <li>Transferring and referring investigators to other missionaries and areas</li>
+                                    <li>Built and maintained high profile sites for lds.org and other church partners</li>
+                                    <li>Sites include:
+                                        <ul>
+                                            <li><a href="https://www.lds.org/si">Seminaries and Institutes</a></li>
+                                            <li><a href="https://www.lds.org/referrals">Missionary Referrals</a></li>
+                                            <li><a href="https://www.lds.org/temples">Temples</a></li>
+                                            <li><a href="https://www.rootstech.org">RootsTech</a></li>
+                                            <li><a href="https://www.thrasherresearch.org">Thrasher Reasearch</a></li>
+                                            <li><a href="https://www.deseretindustries.org">Deseret Industries Thrift Store</a></li>
+                                            <li><a href="https://www.ldscharities.org">LDS Charities</a></li>
+                                            <li><a href="https://addictionrecovery.lds.org">Addiction Recovery</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>Worked to ensure website accessiblity</li>
                             </ul>
-                        </li>
-                        <li>Worked to stabilize the application through many bug fixes, unit tests, and enhancements</li>
-                        <li>Optimized the synchronization process by removing unnecessary database calls</li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="resume__item">
-                    <h4 class="resume__item__title">Paramount Acceptance Corp. <em>2012-2013</em></h4>
-                    <p class="resume__item__summary">C#, ASP.net, SQL Server, jQuery, HTML5, and CSS3</p>
-                    <ul>
-                        <li>Implemented a custom calendar application for scheduling gym appointments, facilities, classes and employee work schedules</li>
-                        <li>Customized web templates to match client web sites</li>
-                    </ul>
+                    <div class="drawer">
+                        <div class="drawer__toggle">
+                            <h4 class="resume__item__title">Graduation Alliance - Contract <em>July 2015</em></h4>
+                            <p class="resume__item__summary">AngularJS, Sass/CSS, HTML, Grunt, Twitter Bootstrap, Jasmine</p>
+                        </div>
+                        <div class="drawer__body">
+                            <ul>
+                                <li>Built the front-end for a new Integrated Learning Plan system</li>
+                                <li>Designed and developed dynamic pages using rough wireframes</li>
+                                <li>Strategically built file structures and developed code for a growing site architecture</li>
+                                <li>Developed JavaScript unit tests to assist in quality assurance</li>
+                                <li>Developed object oriented JavaScript including custom angular filters and directives</li>
+                                <li>Configured Grunt to compile and minimize code for production</li>
+                                <li>Developed a language localization strategy and framework</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="resume__item">
-                    <h4 class="resume__item__title">Utah State University Research Foundation <em>2009-2012</em></h4>
-                    <p class="resume__item__summary">ExtJS, AJAX, JSON, TCL, PostgreSQL, HTML, CSS</p>
-                    <ul>
-                        <li>Worked on various in-house projects including their employment applicant tracking system, conference registration system, and employee performance review system. </li>
-                    </ul>
+                    <div class="drawer">
+                        <div class="drawer__toggle">
+                            <h4 class="resume__item__title">Western Governors University - Contract <em>2014 - 1015</em></h4>
+                            <p class="resume__item__summary">SASS/CSS, HTML, Grunt, AngularJS</p>
+                        </div>
+                        <div class="drawer__body">
+                            <ul>
+                                <li>Planned and developed a standard SASS/CSS and JavaScript framework to be used across all pages on the WGU student portal</li>
+                                <li>Developed documentation to support future front-end development</li>
+                                <li>Standardized the student portal and converted antiquated code to AngularJS, HTML5 and SASS</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="resume__item">
+                    <div class="drawer">
+                        <div class="drawer__toggle">
+                            <h4 class="resume__item__title">The Church of Jesus Christ of Latter-Day Saints - Contract <em>2013-2014</em></h4>
+                            <p class="resume__item__summary">SASS/CSS, HTML, Sencha Touch/JavaScript, and Java-Spring</p>
+                        </div>
+                        <div class="drawer__body">
+                                <ul>
+                                    <li>Developed key features of the mobile Area Book Planner application which include:
+                                        <ul>
+                                            <li>Recording the teaching of online investigators</li>
+                                            <li>Transferring and referring investigators to other missionaries and areas</li>
+                                        </ul>
+                                    </li>
+                                    <li>Worked to stabilize the application through many bug fixes, unit tests, and enhancements</li>
+                                    <li>Optimized the synchronization process by removing unnecessary database calls</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume__item">
+                    <div class="drawer">
+                        <div class="drawer__toggle">
+                            <h4 class="resume__item__title">Paramount Acceptance Corp. <em>2012-2013</em></h4>
+                            <p class="resume__item__summary">C#, ASP.net, SQL Server, jQuery, HTML5, and CSS3</p>
+                        </div>
+                        <div class="drawer__body">
+                            <ul>
+                                <li>Implemented a custom calendar application for scheduling gym appointments, facilities, classes and employee work schedules</li>
+                                <li>Customized web templates to match client web sites</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume__item">
+                    <div class="drawer">
+                        <div class="drawer__toggle">
+                            <h4 class="resume__item__title">Utah State University Research Foundation <em>2009-2012</em></h4>
+                            <p class="resume__item__summary">ExtJS, AJAX, JSON, TCL, PostgreSQL, HTML, CSS</p>
+                        </div>
+                        <div class="drawer__body">
+                            <ul>
+                                <li>Worked on various in-house projects including an employment applicant tracking system, conference registration system, and employee performance review system. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="education">
 
                 <h3>Education</h3>
                 <p class="pre">
@@ -108,10 +159,8 @@
                     Jon M. Huntsman School Of Business
                     Management Information Systems - May 2012
                 </p>
-
-                <h3>Training</h3>
-                <p>Personal training projects completed using: ReactJS, AngularJS, NodeJS, HTML5, CSS3, Sass, Compass, PHP, GitHub, Grunt, Karma, Jasmine, AJAX, and JSON</p>
-
+            </section>
+            <section id="accomplishments">
                 <h3>Accomplishments</h3>
                 <p class="pre">
                     Completed 2 years ecclesiastical service in Alberta, Canada
@@ -121,12 +170,12 @@
         </main>
 
         <footer>
-            <a href="https://twitter.com/kerrywpowell">Twitter</a>
             <a href="https://www.linkedin.com/in/kerry-powell-449a4669">LinkedIn</a>
-            <a href="https://medium.com/@kerrywpowell">Medium</a>
+            <a href="https://medium.com/@kerrywpowell">Blog</a>
             <a href="https://www.github.com/powellkerry">GitHub</a>
             <a href="mailto:kerrywpowell@gmail.com">Email</a>
         </footer>
+        <script src="/main.js"></script>
     </body>
 
 </html>

@@ -9,7 +9,9 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    color: $color__gray--dark;
+    font-size: 18px;
+    background: #47555E;
+    color: $color__gray--light;
 }
 
 main {
@@ -30,9 +32,8 @@ a {
     padding: $spacing--300;
     text-decoration: none;
     display: block;
-    width: 110px;
-    margin: 0px auto;;
-    color: $color__gray--dark;
+    margin: 0px auto;
+    color: $color__gray--light;
     border-bottom: 1px solid $color__gray--light;
 
     @media screen and (min-width: 800px) {
@@ -51,31 +52,40 @@ a {
     }
 
     &:visited, &:hover, &:active {
-        color: $color__gray--dark;
+        color: $color__gray--light;
         text-decoration: none;
     }
 
     &:hover {
-        font-weight: bold;
+        text-decoration: underline;
     }
 }
 
 
 .site-header {
-    border-bottom: 1px solid $color__gray--light;
     padding: $spacing--500;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
-    h2 {
-        font-size: .85rem;
+    &__logo-container {
+        flex: 0 0 100%;
+        width: 100%;
+
+        @media screen and (min-width: 800px) {
+            flex: 0 0 250px;
+            width: 250px;
+        }
     }
-}
 
-.site-nav {
-    padding: $spacing--500;
-    text-align: center;
+    &__logo {
+        width: 100%;
+    }
 
-    a {
-
+    &__nav {
+        flex: 1 1 auto;
+        padding: $spacing--500;
+        text-align: left;
     }
 }
 
@@ -93,11 +103,61 @@ section {
     .pre {
         white-space: pre-line;
     }
+
+    ul ul {
+        margin: $spacing--300 0;
+    }
+
+    li {
+        margin-bottom: $spacing--100;
+    }
 }
 
 .resume {
     &__item {
         margin-bottom: $spacing--500;
+    }
+}
+
+.drawer {
+
+    &__toggle {
+        cursor: pointer;
+        position: relative;
+        padding-right: 60px;
+
+        &:after {
+            content: '';
+            background: url(/images/arrow-down.svg) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 0px;
+            right: 0;
+            height: 20px;
+            width: 20px;
+            transform: rotate(-90deg);
+            transition: transform 300ms ease;
+            transform-origin: center;
+        }
+    }
+
+    &__body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 300ms ease;
+    }
+
+    &[data-expanded = true] {
+        .drawer {
+            &__toggle {
+                &:after {
+                    transform: rotate(0deg);
+                }
+            }
+            &__body {
+                max-height: 600px;
+            }
+        }
     }
 }
 
