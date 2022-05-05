@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  background: #47555E;
+  background: #0e0f10;
   color: #eee;
 }
 
@@ -21,6 +21,10 @@ h1, h2, h3, h4 {
 }
 
 a {
+  color: #eee;
+}
+
+.site-header__nav a, footer a {
   padding: 20px;
   text-decoration: none;
   display: block;
@@ -29,26 +33,26 @@ a {
   border-bottom: 1px solid #eee;
 }
 @media screen and (min-width: 800px) {
-  a {
+  .site-header__nav a, footer a {
     display: inline-block;
     border-bottom: 0;
     border-right: 1px solid #eee;
     padding: 0 20px;
   }
 }
-a:last-child {
+.site-header__nav a:last-child, footer a:last-child {
   border-bottom: 0;
 }
 @media screen and (min-width: 800px) {
-  a:last-child {
+  .site-header__nav a:last-child, footer a:last-child {
     border-right: 0;
   }
 }
-a:visited, a:hover, a:active {
+.site-header__nav a:visited, .site-header__nav a:hover, .site-header__nav a:active, footer a:visited, footer a:hover, footer a:active {
   color: #eee;
   text-decoration: none;
 }
-a:hover {
+.site-header__nav a:hover, footer a:hover {
   text-decoration: underline;
 }
 
