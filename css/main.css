@@ -3,15 +3,18 @@ html, body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  background: #0e0f10;
-  color: #eee;
+  background: #fff;
+  color: #000;
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 800px) {
   main {
-    width: 800px;
-    overflow: none;
-    margin: 0px auto;
+    overflow: auto;
+    margin: 0px 100px 0 215px;
   }
 }
 
@@ -29,15 +32,43 @@ a {
   text-decoration: none;
   display: block;
   margin: 0px auto;
-  color: #eee;
-  border-bottom: 1px solid #eee;
+  color: #b12300;
+  border-bottom: 1px solid #b12300;
 }
+
+.profile-image-container {
+  height: 175px;
+  width: 175px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 0px auto;
+}
+
+.profile-name {
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .profile-image-container {
+    margin: 0;
+  }
+  .profile-name {
+    position: absolute;
+    top: 3rem;
+    left: 250px;
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .site-header__nav a, footer a {
     display: inline-block;
     border-bottom: 0;
-    border-right: 1px solid #eee;
+    border-right: 1px solid #b12300;
     padding: 0 20px;
+  }
+  .site-header__nav a:first-child {
+    padding-left: 0px;
   }
 }
 .site-header__nav a:last-child, footer a:last-child {
@@ -49,7 +80,7 @@ a {
   }
 }
 .site-header__nav a:visited, .site-header__nav a:hover, .site-header__nav a:active, footer a:visited, footer a:hover, footer a:active {
-  color: #eee;
+  color: #8f1d00;
   text-decoration: none;
 }
 .site-header__nav a:hover, footer a:hover {
@@ -58,39 +89,62 @@ a {
 
 .site-header {
   padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  box-sizing: border-box;
 }
 .site-header__logo-container {
-  flex: 0 0 100%;
   width: 100%;
 }
 @media screen and (min-width: 800px) {
   .site-header__logo-container {
-    flex: 0 0 250px;
-    width: 250px;
+    flex: 0 0 450px;
+    width: 450px;
   }
 }
 .site-header__logo {
   width: 100%;
 }
 .site-header__nav {
-  flex: 1 1 auto;
-  padding: 40px;
+  padding: 40px 40px 40px 0;
   text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 800px) {
+  .site-header__nav {
+    position: absolute;
+    left: 250px;
+    top: 90px;
+  }
 }
 
 section {
   padding: 40px;
+  box-sizing: border-box;
+}
+section h2 {
+  margin-bottom: 20px;
 }
 section h3 {
+  color: #0079b1
+}
+section h4 {
+  font-weight: lighter;
+}
+section time {
+  font-size: .75rem;
+  display: block;
   margin-bottom: 20px;
 }
 section p {
   margin-bottom: 40px;
   display: block;
 }
+
+section .skills {
+  font-size: .75rem;
+}
+
 section .pre {
   white-space: pre-line;
 }
@@ -105,40 +159,12 @@ section li {
   margin-bottom: 40px;
 }
 
-.drawer__toggle {
-  cursor: pointer;
-  position: relative;
-  padding-right: 60px;
-}
-.drawer__toggle:after {
-  content: "";
-  background: url(/images/arrow-down.svg) no-repeat;
-  background-size: 100%;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  height: 20px;
-  width: 20px;
-  transform: rotate(-90deg);
-  transition: transform 300ms ease;
-  transform-origin: center;
-}
-.drawer__body {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 300ms ease;
-}
-.drawer[data-expanded=true] .drawer__toggle:after {
-  transform: rotate(0deg);
-}
-.drawer[data-expanded=true] .drawer__body {
-  max-height: 600px;
-}
-
 footer {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #0079b1;
   padding: 40px;
   text-align: center;
+  box-sizing: border-box;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */

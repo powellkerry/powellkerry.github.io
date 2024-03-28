@@ -2,7 +2,8 @@
 <html lang="en-US">
     <head>
         <title>Kerry Powell : Profile</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#47555E">
         <meta name="description" content="Profile and professional resume of Kerry Powell"/>
         <link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
@@ -13,197 +14,112 @@
 
     <body>
         <header class="site-header">
-            <div class="site-header__logo-container">
-                <img src="/images/logo_transparent.png" class="site-header__logo" alt="Kerry Powell - logo"/>
-            </div>
+            <h1 class="site-header__logo-container">
+                <div class="profile-image-container">
+                    <img src="/images/profile.jpg" class="site-header__logo" alt="Kerry Powell - image"/>
+                </div>
+                <div class="profile-name">Kerry Powell</div>
+                
+            </h1>
             <nav class="site-header__nav">
-                    <a href="#profile">Profile</a>
-                    <a href="#resume">Work History</a>
-                    <a href="#education">Education</a>
-                </nav>
+                <a href="#profile">Profile</a>
+                <a href="#resume">Work History</a>
+                <a href="#education">Education</a>
+            </nav>
         </header>
 
         
         <main>
-            <section id="profile">
-                <h3>Profile</h3>
-                <p>
-                    I am a highly motivated front-end web developer with over 10 years of experience. My experience includes working with technologies and languages such as ReactJS, NextJS, Progressive Web Apps, Accessibility including ARIA, CSS Next, Post CSS, Handlebars, Gulp, Sass, NodeJS, etc.
-                </p>
-                <p>
-                    I live in South Jordan, Utah where I enjoy spending time with my family, the occasional wood working project, and doing home improvements.
-                </p>
-            </section>
+            <article>
+                <section id="profile">
+                    <h2>Profile</h2>
+                    <p>
+                        Seasoned Software Engineer passionate about user experience (UX), accessibility, performance, and writing clean readable code
+                    </p>
+                </section>
 
-            <section id="resume">
-                <h3>Work History</h3>
+                <section id="resume">
+                    <h2>Work History</h2>
 
-                <div class="resume__item">
-                    <div class="drawer">
-                        <div class="drawer__toggle">
-                            <h4 class="resume__item__title">Ad Hoc LLC <em>2022-Current</em></h4>
-                            <div class="resume__item__summary">
-                                <div>Role: Senior Software Engineer, Site Reliability Engineer (Front-end Focus)</div>
-                                <div>Technologies: NodeJS, BoltJS, Slack Application, AWS, ReactJS</div>
-                            </div>
-                        </div>
-                        <div class="drawer__body">
-                            <ul>
-                                    <li>Wrote and maintained Slack applications using NodeJS and BoltJS.</li>
-                                    <li>Worked with AWS, including Lambdas and EKS</li>
-                                    <li>Answered support questions dealing with environments, pull-requests, NodeJS, and ReactJS</li>
-                            </ul>
+                    <div class="resume__item">
+                        <h3 class="resume__item__title">Ad Hoc LLC</h3>
+                        <h4>Senior Software Engineer</h4>
+                        <time>February 2022 - PRESENT</time>
+                        
+                        <p>
+                            As a member of the platform team I provided operational support, and developed/maintained
+                            components and libraries for use in the Department of Veterans Affairs website va.gov. 
+                            Due to high traffic and the need to accommodate veterans needs, priority was given to 
+                            developing for availability, performance, and accessibility.
+                        </p>
+
+                        <div class="skills">
+                            Skills & Technologies: HTML, CSS, JavaScript, NodeJS, TypeScript, WebSockets, Web Components, ReactJS, Sass, GitHub Actions, AWS, Kubernetes, Mocha, Cypress, WCAG/AAA (Accessibility)
                         </div>
                     </div>
-                </div>
 
-                <div class="resume__item">
-                    <div class="drawer">
-                        <div class="drawer__toggle">
-                            <h4 class="resume__item__title">The Church of Jesus Christ of Latter-day Saints <em>2015-2022</em></h4>
-                            <div class="resume__item__summary">
-                                <div>Role: Lead Software Engineer</div>
-                                <div>Technologies: NodeJS, Handlebars, ReactJS, nextJS, Progressive Web Applications, CSS next, Sass/CSS, ES6 (Native JS)</div>
-                            </div>
-                        </div>
-                        <div class="drawer__body">
-                            <ul>
-                                <li>Led development on high traffic and international sites including:
-                                    <ol>
-                                        <li>Temples - <a href="https://temples.churchofjesuschrist.org" target="_blank">temples.churchofjesuschrist.org</a></li>
-                                        <li>Seminaries & Institutes - <a href="https://www.churchofjesuschrist.org/si" target="_blank">churchofjesuschrist.org/si</a></li>
-                                        <li>Addiction Recovery  - <a href="https://addictionrecovery.churchofjesuschrist.org" target="_blank">addictionrecovery.churchofjesuschrist.org</a></li>
-                                        <li>Deseret Industries - <a href="https://www.deseretindustries.org" target="_blank">deseretindustries.org</a></li>
-                                    </ol>
-                                </li>
-                                <li>Oversaw development of the first public application to be deployed to Amazon AWS using only lambdas for the church</li>
-                                <li>Architected, developed, and led on initiatives to change domain names, migrate git repositories, and set up Microsoft Azure deployment pipelines</li>
-                                <li>Technologies & Areas of Focus
-                                    <ol>
-                                        <li>ReactJS</li>
-                                        <li>TypeScript</li>
-                                        <li>NodeJS</li>
-                                        <li>Progressive Web Applications</li>
-                                        <li>Localization</li>
-                                        <li>Accessibility</li>
-                                        <li>Search Engine Optimization</li>
-                                    </ol>
-                                </li>
-                            </ul>
+                    <div class="resume__item">
+                        <h3 class="resume__item__title">The Church of Jesus Christ of Latter-day Saints</h3>
+                        <h4>Lead Software Engineer</h4>
+                        <time>July 2016 - February 2022</time>
+                        
+                        <p>
+                            Managed and participated in all steps of the software development lifecycle. 
+                            Oversaw development on multiple projects and high traffic websites. Pioneered development 
+                            of the first public web application in AWS Lambda
+                        </p>
+
+                        <div class="skills">
+                            Skills & Technologies: HTML, CSS, JavaScript, ReactJS, TypeScript, NodeJS, Sass, Localization, Search Engine Optimization (SEO), AWS, Lambda, Progressive Web Applications (PWA), Performance & load-time optimization, Accessibility
                         </div>
                     </div>
-                </div>
 
-                <div class="resume__item">
-                    <div class="drawer">
-                        <div class="drawer__toggle">
-                            <h4 class="resume__item__title">Graduation Alliance - Contract <em>July 2015</em></h4>
-                            <div class="resume__item__summary">
-                                <div>Role: Web Developer Consultant</div>
-                                <div>Technologies: AngularJS, Sass/CSS, HTML, Grunt, Twitter Bootstrap, Jasmine</div>
-                            </div>
-                        </div>
-                        <div class="drawer__body">
-                            <ul>
-                                <li>Built the front-end for a new Integrated Learning Plan system</li>
-                                <li>Designed and developed dynamic pages using rough wireframes</li>
-                                <li>Strategically built file structures and developed code for a growing site architecture</li>
-                                <li>Developed JavaScript unit tests to assist in quality assurance</li>
-                                <li>Developed object oriented JavaScript including custom angular filters and directives</li>
-                                <li>Configured Grunt to compile and minimize code for production</li>
-                                <li>Developed a language localization strategy and framework</li>
-                            </ul>
+                    <div class="resume__item">
+                        <h3 class="resume__item__title">Software Technology Group</h3>
+                        <h4>Web Developer Consultant</h4>
+                        <time>April 2013 - July 2016</time>
+                        
+                        <p>
+                            Engaged with multiple clients to build projects and design systems. Clients included the 
+                            Church of Jesus Christ, Western Governors University, and Graduation Alliance.
+                        </p>
+
+                        <div class="skills">
+                            Skills & Technologies: HTML, CSS, JavaScript, SenchaTouch, AngularJS, ReactJS, Mocha, NodeJS, Sass
                         </div>
                     </div>
-                </div>
 
-                <div class="resume__item">
-                    <div class="drawer">
-                        <div class="drawer__toggle">
-                            <h4 class="resume__item__title">Western Governors University - Contract <em>2014 - 1015</em></h4>
-                            <div class="resume__item__summary">
-                                <div>Role: Web Developer Consultant</div>
-                                <div>Technologies: SASS/CSS, HTML, Grunt, AngularJS</div>
-                            </div>
-                        </div>
-                        <div class="drawer__body">
-                            <ul>
-                                <li>Planned and developed a standard SASS/CSS and JavaScript framework to be used across all pages on the WGU student portal</li>
-                                <li>Developed documentation to support future front-end development</li>
-                                <li>Standardized the student portal and converted antiquated code to AngularJS, HTML5 and SASS</li>
-                            </ul>
+                    <div class="resume__item">
+                        <h3 class="resume__item__title">Paramount Acceptance Corp.</h3>
+                        <h4>Web Development Engineer</h4>
+                        <time>July 2012 - April 2013</time>
+                        
+                        <p>Fine-tuned scheduling and bill payment web applications to match seamlessly with client websites.</p>
+
+                        <div class="skills">
+                            Skills & Technologies: C#, ASP.net, SQL Server, jQuery, HTML5, and CSS3
                         </div>
                     </div>
-                </div>
 
-                <div class="resume__item">
-                    <div class="drawer">
-                        <div class="drawer__toggle">
-                            <h4 class="resume__item__title">The Church of Jesus Christ of Latter-Day Saints - Contract <em>2013-2014</em></h4>
-                            <div class="resume__item__summary">
-                                <div>Role: Web Developer Consultant</div>
-                                <div>Technologies: SASS/CSS, HTML, Sencha Touch/JavaScript, and Java-Spring</div>
-                            </div>
-                        </div>
-                        <div class="drawer__body">
-                                <ul>
-                                    <li>Developed key features of the mobile Area Book Planner application which include:
-                                        <ul>
-                                            <li>Recording the teaching of online investigators</li>
-                                            <li>Transferring and referring investigators to other missionaries and areas</li>
-                                        </ul>
-                                    </li>
-                                    <li>Worked to stabilize the application through many bug fixes, unit tests, and enhancements</li>
-                                    <li>Optimized the synchronization process by removing unnecessary database calls</li>
-                                </ul>
+                    <div class="resume__item">
+                        <h3 class="resume__item__title">Utah State University Research Foundation / Space Dynamics Laboratory</h3>
+                        <h4>Student Web Development Engineer</h4>
+                        <time>January 2009 - July 2012</time>
+                        
+                        <p>Engineered web applications to manage Human Resources recruitment and talent acquisition efforts, as well as plan and organize hosted conferences such as SmallSat.</p>
+                        
+                        <div class="skills">
+                            Skills & Technologies: ExtJS, AJAX, JSON, TCL, PostgreSQL, HTML, CSS
                         </div>
                     </div>
-                </div>
-
-                <div class="resume__item">
-                    <div class="drawer">
-                        <div class="drawer__toggle">
-                            <h4 class="resume__item__title">Paramount Acceptance Corp. <em>2012-2013</em></h4>
-                            <div class="resume__item__summary">
-                                <div>Role: Web Development Engineer</div>
-                                <div>Technologies: C#, ASP.net, SQL Server, jQuery, HTML5, and CSS3</div>
-                            </div>
-                        </div>
-                        <div class="drawer__body">
-                            <ul>
-                                <li>Implemented a custom calendar application for scheduling gym appointments, facilities, classes and employee work schedules</li>
-                                <li>Customized web templates to match client web sites</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="resume__item">
-                    <div class="drawer">
-                        <div class="drawer__toggle">
-                            <h4 class="resume__item__title">Utah State University Research Foundation / Space Dynamics Laboratory <em>2009-2012</em></h4>
-                            <div class="resume__item__summary">
-                                <div>Role: Student Web Development Engineer</div>
-                                <div>Technologies: ExtJS, AJAX, JSON, TCL, PostgreSQL, HTML, CSS</div>
-                            </div>
-                        </div>
-                        <div class="drawer__body">
-                            <ul>
-                                <li>Worked on various in-house projects including an employment applicant tracking system, conference registration system, and employee performance review system. </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="education">
-
-                <h3>Education</h3>
-                <p class="pre">
-                    Bachelor of Science - Utah State University
-                    Jon M. Huntsman School Of Business
-                    Management Information Systems - May 2012
-                </p>
-            </section>
+                </section>
+                <section id="education">
+                    <h2>Education</h2>
+                    <h3>Utah State University - Jon M. Huntsman School Of Business</h3>
+                    <h4>Bachelor of Science - Management Information Systems</h4>
+                    <time>August 2009 - May 2012</time>
+                </section>
+            </article>
         </main>
 
         <footer>
@@ -212,7 +128,6 @@
             <a target="_blank" href="https://www.github.com/powellkerry">GitHub</a>
             <a target="_blank" href="mailto:kerrywpowell@gmail.com">Email</a>
         </footer>
-        <script src="/main.js"></script>
     </body>
 
 </html>
