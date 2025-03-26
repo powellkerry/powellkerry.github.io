@@ -11,7 +11,7 @@ html, body {
   overflow-x: hidden;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   main {
     overflow: auto;
     margin: 0px 100px 0 215px;
@@ -25,7 +25,7 @@ h1, h2, h3, h4 {
 }
 
 a {
-  color: #eee;
+  color: #b12300;
 }
 
 .site-header__nav a, footer a {
@@ -49,7 +49,7 @@ a {
   text-align: center;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .profile-image-container {
     margin: 0;
   }
@@ -61,7 +61,7 @@ a {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .site-header__nav a, footer a {
     display: inline-block;
     border-bottom: 0;
@@ -75,7 +75,7 @@ a {
 .site-header__nav a:last-child, footer a:last-child {
   border-bottom: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .site-header__nav a:last-child, footer a:last-child {
     border-right: 0;
   }
@@ -95,7 +95,7 @@ a {
 .site-header__logo-container {
   width: 100%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .site-header__logo-container {
     flex: 0 0 450px;
     width: 450px;
@@ -111,7 +111,7 @@ a {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .site-header__nav {
     position: absolute;
     left: 250px;
