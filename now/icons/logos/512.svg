@@ -1,9 +1,0 @@
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group">
-            <path d="M256,512 C114.615104,512 0,397.384896 0,256 C0,114.615104 114.615104,0 256,0 C397.384896,0 512,114.615104 512,256 C512,397.384896 397.384896,512 256,512 Z M257,488 C385.130062,488 489,384.130062 489,256 C489,127.869938 385.130062,24 257,24 C128.869938,24 25,127.869938 25,256 C25,384.130062 128.869938,488 257,488 Z" id="Combined-Shape" fill="#1483B5"></path>
-            <rect id="Rectangle" fill="#626262" x="256" y="147" width="16" height="133"></rect>
-            <rect id="Rectangle" fill="#626262" transform="translate(350.000000, 272.000000) rotate(90.000000) translate(-350.000000, -272.000000) " x="342" y="178" width="16" height="188"></rect>
-        </g>
-    </g>
-</svg>
