@@ -14,7 +14,7 @@ const BlogPost = () => {
     React.useEffect(() => {
         const fetchPost = async () => {
             try {
-                const response = await fetch('/data/blog-posts.json');
+                const response = await fetch('data/blog-posts.json');
                 const data = await response.json();
                 const found = data.posts.find((p: any) => p.id === id);
                 setPost(found);

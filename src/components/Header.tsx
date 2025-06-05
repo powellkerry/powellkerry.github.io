@@ -54,7 +54,7 @@ export default function Header() {
             <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
                 <h1 className="text-2xl font-bold mb-2 sm:mb-0">
                     <Link to="/" className="flex items-center hover:text-amber-900 transition-colors">
-                        <img src="/logo.svg" alt="Logo" className="h-20 inline-block mr-2" />
+                        <img src="logo.svg" alt="Logo" className="h-20 inline-block mr-2" />
                         <div className="text-blue-gray-900">
                             <div className="text-2xl">Kerry Powell</div>
                             <div className="text-lg">Software Engineer</div>

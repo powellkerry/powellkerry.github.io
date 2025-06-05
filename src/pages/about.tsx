@@ -4,16 +4,16 @@ import Footer from '../components/Footer';
 import { Card, Typography, Avatar } from '@material-tailwind/react';
 
 const galleryImages = [
-    '/gallery/1.jpg',
-    '/gallery/2.jpg',
-    '/gallery/3.jpg',
-    '/gallery/4.jpg',
-    '/gallery/5.jpg',
-    '/gallery/6.jpg',
-    '/gallery/7.jpg',
-    '/gallery/8.jpg',
-    '/gallery/9.jpg',
-    '/gallery/10.jpg',
+    'gallery/1.jpg',
+    'gallery/2.jpg',
+    'gallery/3.jpg',
+    'gallery/4.jpg',
+    'gallery/5.jpg',
+    'gallery/6.jpg',
+    'gallery/7.jpg',
+    'gallery/8.jpg',
+    'gallery/9.jpg',
+    'gallery/10.jpg',
 ];
 
 const About: React.FC = () => {
@@ -24,18 +24,18 @@ const About: React.FC = () => {
                 <Card className="max-w-2xl w-full shadow-lg p-6 flex flex-col items-center">
                     <div className="mt-8" />
                     <Avatar
-                        src="/avatar.jpg"
+                        src="avatar.jpg"
                         alt="Kerry Powell"
                         size="xxl"
                         className="mb-4 shadow-lg border-4 border-white -mt-12"
                     />
-                    <Typography variant="h2" className="mb-2 font-bold text-center">
+                    <Typography variant="h2" className="mt-8 mb-2 font-bold text-center">
                         About Me
                     </Typography>
                     <Typography className="mb-4 text-center">
                         Hi! I'm Kerry Powell. I live in Pocatello, Idaho with my wonderful wife and our three kids (two girls and one boy). I am passionate about web development and design, and I love building things that make a difference.
                     </Typography>
-                    <Typography variant="h3" className="mb-2 font-semibold">Fun Facts</Typography>
+                    <Typography variant="h3" className="mt-8 mb-2 font-semibold">Fun Facts</Typography>
                     <ul className="list-disc ml-6 mb-4 text-left">
                         <li>I enjoy amateur woodworking and creating things with my hands.</li>
                         <li>Gardening is one of my favorite ways to relax and spend time outdoors.</li>

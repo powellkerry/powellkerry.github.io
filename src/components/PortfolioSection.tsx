@@ -8,13 +8,13 @@ const PortfolioSection: React.FC = () => {
   const [openAccordion, setOpenAccordion] = useState<number | null>(null);
 
   useEffect(() => {
-    fetch("/data/work-history.json")
+    fetch("data/work-history.json")
       .then((res) => res.json())
       .then((data) => setWorkHistory(data.companies || []));
-    fetch("/data/education.json")
+    fetch("data/education.json")
       .then((res) => res.json())
       .then((data) => setEducation(data.education || []));
-    fetch("/data/certifications.json")
+    fetch("data/certifications.json")
       .then((res) => res.json())
       .then((data) => setCertifications(data.certifications || []));
   }, []);

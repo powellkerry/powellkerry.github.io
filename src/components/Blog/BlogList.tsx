@@ -7,7 +7,7 @@ const BlogList: React.FC = () => {
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        fetch('/data/blog-posts.json')
+        fetch('data/blog-posts.json')
             .then((res) => res.json())
             .then((data) => setPosts(data.posts || []))
             .catch((error) => {setError(error.message); console.error('Error fetching blog posts:', error);})
@@ -29,7 +29,7 @@ const BlogList: React.FC = () => {
                     <CardBody>
                         <Typography variant="h5" as="h3" className="mb-2 font-semibold">{post.title}</Typography>
                         <Typography className="mb-2 text-gray-600 text-sm">{post.date}</Typography>
-                        <a href={`/blog/${post.id}`}>
+                        <a href={`#/blog/${post.id}`}>
                           <Button color="blue-gray" variant="outlined" size="sm">
                             Read more
                           </Button>

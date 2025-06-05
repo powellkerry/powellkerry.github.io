@@ -6,7 +6,7 @@
         "endDate": "Present",
         "description": "Developed new features and web-components in the design system for the Department of Veterans Affairs website. Maintained and improved existing codebase, ensuring quality and accessibility of applications. Collaborated with cross-functional teams to define, design, and ship new features.",
         "location": "1 Fireberry Blvd, Stafford, VA, 22554 (Remote)",
-        "img": "/VA.jpg",
+        "img": "VA.jpg",
         "achievements": [
             "Implemented dark-mode capabilities, enhancing user experience and accessibility.",
             "Developed and maintained web-components for the VA design system, improving consistency across applications.",
@@ -34,7 +34,7 @@
         "endDate": "2025-05-06",
         "description": "Developed new features and web-components in the design system for the Department of Veterans Affairs website. Maintained and improved existing codebase, ensuring quality and accessibility of applications. Collaborated with cross-functional teams to define, design, and ship new features.",
         "location": "1676 International Drive, Suite 530, McLean, VA 22102 (Remote)",
-        "img": "/VA.jpg",
+        "img": "VA.jpg",
         "achievements": [
             "Deprecated legacy css libraries and updated thousands of files without introducing any regressions, unblocking critical Node.js upgrades.",
             "Developed web components to align with the latest United States Web Design System (USWDS), optimizing both user experience and accessibility.",
@@ -62,7 +62,7 @@
         "endDate": "2022-02-14",
         "description": "Managed large-scale projects and pioneered development using AWS Lambda to optimize web performance for high-traffic international sites.",
         "location": "3740 W Market Center Dr, Riverton, UT 84065",
-        "img": "/Church.jpg",
+        "img": "Church.jpg",
         "achievements": [
             "Spearheaded the migration of seven legacy sites from Handlebars to ReactJS, resulting in improved maintainability and performance.",
             "Supervised initiative to enhance site architecture, implementing serverless architecture with AWS Lambda, S3, Fargate, RDS, andTerraform. ",
@@ -86,7 +86,7 @@
         "endDate": "2016-07-27",
         "description": "Worked closely with clients such as  Western Governors University and Graduation Alliance to build user-centric web solutions.",
         "location": "555 S 300 E, Salt Lake City, UT",
-        "img": "/STG.jpeg",
+        "img": "STG.jpeg",
         "achievements": [
             "Collaborated with design teams to establish web design systems for clients, ensuring scalability and consistency across platforms.",
             "Engaged with clients to deliver solutions aligned with business goals and user experience standards."
@@ -107,7 +107,7 @@
         "endDate": "2013-04",
         "description": "Worked to optimize client-facing applications and create a seamless, branded experience for bill payment and scheduling.",
         "location": "4725 Holladay Blvd, Holladay, UT 84117",
-        "img": "/paramount.jpg",
+        "img": "paramount.jpg",
         "technologies": [
             "HTMl",
             "CSS",
@@ -120,7 +120,7 @@
         "endDate": "2012-07",
         "description": "Developed applications to streamline HR recruitment and manage talent acquisition for space-related projects.",
         "location": "416 E Innovation Ave, North Logan, UT 84341",
-        "img": "/SpaceDynamics.jpg",
+        "img": "SpaceDynamics.jpg",
         "technologies": [
             "ExtJS",
             "NodeJS",
