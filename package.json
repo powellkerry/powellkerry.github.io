@@ -4,7 +4,7 @@
   "description": "A personal portfolio website showcasing projects and a blog.",
   "main": "src/pages/index.tsx",
   "scripts": {
-    "start": "vite",
+    "start": "vite --mode=development build && vite --mode=development serve",
     "build": "vite build && cp CNAME docs/CNAME",
     "preview": "vite preview",
     "test": "yarn build && playwright test tests/accessibility.spec.ts",
