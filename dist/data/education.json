@@ -1,0 +1,13 @@
+{
+    "education": [
+        {
+            "degree": "Bachelor of Science in Management Information Systems",
+            "institution": "Utah State University",
+            "startDate": "2009-08",
+            "endDate": "2012-05",
+            "year": 2012,
+            "location": "Logan, UT",
+            "img": "UtahState.jpeg"
+        }
+    ]
+}

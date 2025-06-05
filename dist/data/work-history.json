@@ -1,0 +1,134 @@
+{
+    "companies": [{
+        "name": "Wilcore Technologies Inc.",
+        "position": "Software Engineer",
+        "startDate": "2025-05-06",
+        "endDate": "Present",
+        "description": "Developed new features and web-components in the design system for the Department of Veterans Affairs website. Maintained and improved existing codebase, ensuring quality and accessibility of applications. Collaborated with cross-functional teams to define, design, and ship new features.",
+        "location": "1 Fireberry Blvd, Stafford, VA, 22554 (Remote)",
+        "img": "VA.jpg",
+        "achievements": [
+            "Implemented dark-mode capabilities, enhancing user experience and accessibility.",
+            "Developed and maintained web-components for the VA design system, improving consistency across applications.",
+            "Led audits to ensure adoption of the design system."
+        ],
+        "technologies": [
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub Actions",
+            "Cypress",
+            "Mocha",
+            "Jest",
+            "Webpack",
+            "Node.js",
+            "WCAG/AAA"
+        ]
+    },{
+        "name": "Ad Hoc LLC",
+        "position": "Senior Software Engineer",
+        "startDate": "2022-02-14",
+        "endDate": "2025-05-06",
+        "description": "Developed new features and web-components in the design system for the Department of Veterans Affairs website. Maintained and improved existing codebase, ensuring quality and accessibility of applications. Collaborated with cross-functional teams to define, design, and ship new features.",
+        "location": "1676 International Drive, Suite 530, McLean, VA 22102 (Remote)",
+        "img": "VA.jpg",
+        "achievements": [
+            "Deprecated legacy css libraries and updated thousands of files without introducing any regressions, unblocking critical Node.js upgrades.",
+            "Developed web components to align with the latest United States Web Design System (USWDS), optimizing both user experience and accessibility.",
+            "Collaborated with cross-functional design and product teams to create responsive, accessible components, contributing to improved user experiences."
+        ],
+        "technologies": [
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub Actions",
+            "Cypress",
+            "Mocha",
+            "Jest",
+            "Webpack",
+            "Node.js",
+            "WCAG/AAA"
+        ]
+    },{
+        "name": "The Church of Jesus Christ of Latter-day Saints",
+        "position": "Lead Software Engineer",
+        "startDate": "2016-07-27",
+        "endDate": "2022-02-14",
+        "description": "Managed large-scale projects and pioneered development using AWS Lambda to optimize web performance for high-traffic international sites.",
+        "location": "3740 W Market Center Dr, Riverton, UT 84065",
+        "img": "Church.jpg",
+        "achievements": [
+            "Spearheaded the migration of seven legacy sites from Handlebars to ReactJS, resulting in improved maintainability and performance.",
+            "Supervised initiative to enhance site architecture, implementing serverless architecture with AWS Lambda, S3, Fargate, RDS, andTerraform. ",
+            "Implemented responsive web design and progressive web applications (PWAs).",
+            "Led a cross-functional team of designers and developers, ensuring UX designs were implemented accurately. Conducted code reviews, mentored junior engineers, and optimized front-end performance to enhance scalability."
+        ],
+        "technologies": [
+            "ReactJS",
+            "TypeScript",
+            "NodeJS",
+            "AWS",
+            "Lambda",
+            "Progressive Web Apps",
+            "SEO",
+            "Sass"
+        ]
+    },{
+        "name": "Software Technology Group",
+        "position": "Web Development Consultant",
+        "startDate": "2013-04",
+        "endDate": "2016-07-27",
+        "description": "Worked closely with clients such as  Western Governors University and Graduation Alliance to build user-centric web solutions.",
+        "location": "555 S 300 E, Salt Lake City, UT",
+        "img": "STG.jpeg",
+        "achievements": [
+            "Collaborated with design teams to establish web design systems for clients, ensuring scalability and consistency across platforms.",
+            "Engaged with clients to deliver solutions aligned with business goals and user experience standards."
+        ],
+        "technologies": [
+            "ReactJS",
+            "JavaScript",
+            "SenchaTouch",
+            "AngularJS",
+            "Mocha", 
+            "NodeJS",
+            "Sass"
+        ]
+    },{
+        "name": "Paramount Acceptance Corporation",
+        "position": "Web Development Engineer",
+        "startDate": "2012-07",
+        "endDate": "2013-04",
+        "description": "Worked to optimize client-facing applications and create a seamless, branded experience for bill payment and scheduling.",
+        "location": "4725 Holladay Blvd, Holladay, UT 84117",
+        "img": "paramount.jpg",
+        "technologies": [
+            "HTMl",
+            "CSS",
+            "ASP.NET"
+        ]
+    },{
+        "name": "Space Dynamics Lab (Utah State University) ",
+        "position": "Student Web Development Engineer",
+        "startDate": "2009-01",
+        "endDate": "2012-07",
+        "description": "Developed applications to streamline HR recruitment and manage talent acquisition for space-related projects.",
+        "location": "416 E Innovation Ave, North Logan, UT 84341",
+        "img": "SpaceDynamics.jpg",
+        "technologies": [
+            "ExtJS",
+            "NodeJS",
+            "TCL",
+            "PostgreSQL",
+            "HTML",
+            "CSS",
+            "Sass"
+        ]
+    }]
+}

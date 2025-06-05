@@ -1,0 +1,13 @@
+{
+    "certifications": [
+        {
+            "name": "Certified ScrumMaster (CSM)",
+            "date": "2019-07",
+            "active": false,
+            "provider": "Scrum Alliance",
+            "description": "Certification that demonstrates knowledge of Scrum principles and practices, focusing on the role of the Scrum Master in facilitating Agile processes.",
+            "url": "https://www.scrumalliance.org/certifications/certified-scrummaster",
+            "img": "scrum.png"
+        }
+    ]
+}

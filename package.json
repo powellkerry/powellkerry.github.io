@@ -1,0 +1,47 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A personal portfolio website showcasing projects and a blog.",
+  "main": "src/pages/index.tsx",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "yarn build && playwright test tests/accessibility.spec.ts",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "portfolio",
+    "blog",
+    "react",
+    "typescript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@material-tailwind/react": "^2.1.10",
+    "gh-pages": "^6.3.0",
+    "react": "^18.2.31",
+    "react-dom": "^18.2.31",
+    "react-router-dom": "^7.6.1",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.52.0",
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/node": "20.8.8",
+    "@types/react": "18.2.31",
+    "@types/react-dom": "^18.2.31",
+    "@types/react-router-dom": "^5.1.7",
+    "@vitejs/plugin-react": "^4.5.1",
+    "autoprefixer": "^10.4.21",
+    "axe-core": "^4.10.3",
+    "axe-playwright": "^2.1.0",
+    "playwright": "^1.52.0",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8",
+    "vite": "^6.3.5"
+  }
+}
