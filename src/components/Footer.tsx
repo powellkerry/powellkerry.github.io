@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                 <span className="text-sm">&copy; {new Date().getFullYear()} Kerry Powell. All rights reserved.</span>
                 <div className="flex space-x-4">
                     <a href="https://github.com/powellkerry" target="_blank" rel="noopener noreferrer" className="hover:text-amber-900 transition-colors flex items-center">
-                        <GithubIcon />GitHub
+                        <GitHubIcon />GitHub
                     </a>
                     <a href="https://linkedin.com/in/kerry-w-powell" target="_blank" rel="noopener noreferrer" className="hover:text-amber-900 transition-colors flex items-center">
                         <LinkedInIcon />LinkedIn
