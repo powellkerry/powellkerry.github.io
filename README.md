@@ -4,58 +4,67 @@ This is a personal portfolio website that showcases projects and includes a blog
 
 ## Features
 
-- **Responsive Design**: The website is designed to be fully responsive, ensuring a great user experience on all devices.
-- **Portfolio Section**: Displays a collection of projects with descriptions and links.
-- **Blog Section**: Features a blog where users can read posts and insights on various topics.
-- **Contact Form**: Allows visitors to reach out directly through a contact form.
-- **About Page**: Provides information about the user, including background and skills.
+- **Responsive Design**: Fully responsive for all devices.
+- **Portfolio Section**: Showcases your projects with descriptions and links.
+- **Blog Section**: Read and share posts on various topics.
+- **Contact Form**: Visitors can reach out directly.
+- **About Page**: Information about your background and skills.
 
 ## Technologies Used
 
 - React
 - TypeScript
-- CSS
-- Next.js (or similar framework)
+- Vite
+- Tailwind CSS
+- Material Tailwind React
 
 ## Setup Instructions
 
-1. Clone the repository:
-   ```
+1. **Clone the repository:**
+   ```sh
    git clone <repository-url>
+   cd powellkerry.github.io
    ```
-
-2. Navigate to the project directory:
-   ```
-   cd portfolio-website
-   ```
-
-3. Install the dependencies:
-   ```
+2. **Install dependencies:**
+   ```sh
    npm install
    ```
-
-4. Start the development server:
-   ```
+3. **Start the development server:**
+   ```sh
    npm run dev
    ```
+   The site will open automatically at `http://localhost:5173` (default Vite port).
 
-5. Open your browser and go to `http://localhost:3000` to view the website.
+4. **Build for production:**
+   ```sh
+   npm run build
+   ```
+   The output will be in the `dist/` folder.
 
 ## Folder Structure
 
-- `src/`: Contains all the source code for the application.
-  - `components/`: Reusable components for the website.
-  - `pages/`: Page components for routing.
-  - `styles/`: CSS styles for the application.
-  - `types/`: TypeScript interfaces and types.
-- `public/`: Static files such as images and icons.
-- `package.json`: Project dependencies and scripts.
-- `tsconfig.json`: TypeScript configuration.
+- `src/` — Source code
+  - `components/` — Reusable UI components
+    - `Blog/` — Blog-related components
+  - `pages/` — Page components for routing
+  - `styles/` — CSS and Tailwind styles
+  - `types/` — TypeScript types and interfaces
+- `public/` — Static files (images, data, etc.)
+  - `data/` — JSON data files (e.g., blog posts)
+  - `gallery/` — Image gallery assets
+- `package.json` — Project dependencies and scripts
+- `vite.config.ts` — Vite configuration
+- `tsconfig.json` — TypeScript configuration
+
+## Notes
+
+- **Data files:** Place all JSON and static data in the `public/data/` directory. Access them in code using `fetch(`${import.meta.env.BASE_URL}data/filename.json`)` for correct local and production loading.
+- **Routing:** The app uses `HashRouter` for client-side routing. Blog post URLs are of the form `/#/blog/1`.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+Contributions are welcome! Please open an issue or submit a pull request for suggestions or improvements.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the LICENSE file for details.
