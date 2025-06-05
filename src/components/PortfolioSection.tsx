@@ -30,7 +30,7 @@ const PortfolioSection: React.FC = () => {
         <h2 className="text-2xl font-bold mb-4">Employment</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {workHistory.map((job, idx) => (
-            <Card key={idx} className="shadow-lg">
+            <Card key={job.id} className="shadow-lg">
               {job.img && (
                 <img
                   src={job.img}
