@@ -5,7 +5,7 @@
   "main": "src/pages/index.tsx",
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "vite build && cp CNAME docs/CNAME",
     "preview": "vite preview",
     "test": "yarn build && playwright test tests/accessibility.spec.ts",
     "eject": "react-scripts eject",
