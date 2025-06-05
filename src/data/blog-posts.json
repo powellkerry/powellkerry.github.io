@@ -1,0 +1,11 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "How I created this site with AI",
+            "content": "<p>This website was built using GitHub Copilot, an AI-powered coding assistant. I started with a basic React and TypeScript setup, then used Copilot to scaffold out the project structure, configure Vite, and set up Tailwind CSS for styling. Copilot helped me create reusable components for the header, footer, portfolio, and blog sections, and even generated the code for fetching and displaying data from JSON files.</p><p>For the blog, I used Copilot to design a system that loads posts from a local JSON file and renders them with Material Tailwind components. The contact form was also built with Copilot's help, integrating with Google Forms for easy submissions. Throughout the process, Copilot provided suggestions, fixed errors, and accelerated development, making it possible to launch a modern, responsive portfolio site in record time.</p>",
+            "date": "2025-06-04",
+            "tags": ["Professional", "AI"]
+        }
+    ]
+}
