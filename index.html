@@ -20,6 +20,11 @@
   <!-- NAV -->
   <nav>
     <a href="#hero" class="nav-logo">Kerry W Powell</a>
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -408,6 +413,26 @@
   </footer>
 
   <script>
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.nav-hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
+    });
+
+    // Close menu when a link is clicked
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
     // Scroll reveal
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
@@ -428,14 +453,14 @@
 
     // Smooth nav highlight
     const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a');
+    const navLinkElements = document.querySelectorAll('.nav-links a');
 
     window.addEventListener('scroll', () => {
       let current = '';
       sections.forEach(s => {
         if (window.scrollY >= s.offsetTop - 100) current = s.id;
       });
-      navLinks.forEach(a => {
+      navLinkElements.forEach(a => {
         a.style.color = a.getAttribute('href') === '#' + current
           ? 'var(--text)'
           : '';
