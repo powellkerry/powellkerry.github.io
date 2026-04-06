@@ -1,13 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kerry W. Powell is a Senior Software Engineer with 10+ years of experience building fast, accessible, and scalable web applications. Specializing in React, TypeScript, and front-end architecture with a focus on performance and inclusive design." />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <title>Kerry W. Powell — Senior Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">Kerry W Powell</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+
+      <div class="hero-left">
+        <div class="hero-eyebrow reveal">Available for new opportunities</div>
+        <h1 class="hero-name reveal reveal-delay-1">Kerry W Powell</h1>
+        <p class="hero-title reveal reveal-delay-2">Senior Software Engineer</p>
+        <p class="hero-desc reveal reveal-delay-3">
+          10+ years crafting fast, accessible, scalable web experiences.
+          Specializing in React, TypeScript, and front-end architecture —
+          with a deep commitment to performance and inclusive design.
+        </p>
+        <div class="hero-ctas reveal reveal-delay-4">
+          <a href="#experience" class="btn-primary">View Experience</a>
+          <a href="#contact" class="btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="code-card reveal reveal-delay-2">
+          <div class="code-header">
+            <div class="code-dot red"></div>
+            <div class="code-dot yellow"></div>
+            <div class="code-dot green"></div>
+            <span class="code-filename">engineer.ts</span>
+          </div>
+          <div class="code-body">
+            <span class="code-line c-comment">// Senior Software Engineer</span>
+            <span class="code-line">&nbsp;</span>
+            <span class="code-line">
+              <span class="c-keyword">interface</span>
+              <span class="c-var"> KerryPowell</span>
+              <span class="c-punct"> {</span>
+            </span>
+            <span class="code-line">
+              &nbsp;&nbsp;<span class="c-var">experience</span><span class="c-punct">:</span>
+              <span class="c-str"> '10+ years'</span><span class="c-punct">;</span>
+            </span>
+            <span class="code-line">
+              &nbsp;&nbsp;<span class="c-var">focus</span><span class="c-punct">:</span>
+              <span class="c-str"> 'Front-End'</span><span class="c-punct">;</span>
+            </span>
+            <span class="code-line">
+              &nbsp;&nbsp;<span class="c-var">stack</span><span class="c-punct">: [</span>
+            </span>
+            <span class="code-line">
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">'React'</span><span class="c-punct">,</span>
+              <span class="c-str"> 'TypeScript'</span><span class="c-punct">,</span>
+            </span>
+            <span class="code-line">
+              &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-str">'Node.js'</span><span class="c-punct">,</span>
+              <span class="c-str"> 'AWS'</span>
+            </span>
+            <span class="code-line">&nbsp;&nbsp;<span class="c-punct">];</span></span>
+            <span class="code-line">
+              &nbsp;&nbsp;<span class="c-var">a11y</span><span class="c-punct">:</span>
+              <span class="c-str"> 'WCAG AAA'</span><span class="c-punct">;</span>
+            </span>
+            <span class="code-line"><span class="c-punct">}</span></span>
+            <span class="code-line">&nbsp;</span>
+            <span class="code-line">
+              <span class="c-keyword">const</span>
+              <span class="c-var"> engineer</span>
+              <span class="c-punct"> =</span>
+              <span class="c-fn"> build</span><span class="c-punct">(</span>
+            </span>
+            <span class="code-line">
+              &nbsp;&nbsp;<span class="c-str">'exceptional products'</span><span class="c-punct">,</span>
+            </span>
+            <span class="code-line">
+              &nbsp;&nbsp;<span class="c-str">'strong teams'</span>
+            </span>
+            <span class="code-line"><span class="c-punct">);</span><span class="cursor"></span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-band">
+      <div class="stat reveal">
+        <div class="stat-num">10<span>+</span></div>
+        <div class="stat-label">Years of experience</div>
+      </div>
+      <div class="stat reveal reveal-delay-1">
+        <div class="stat-num">WCAG <span>AAA</span></div>
+        <div class="stat-label">Accessibility standard</div>
+      </div>
+      <div class="stat reveal reveal-delay-2">
+        <div class="stat-num"><span>∞</span></div>
+        <div class="stat-label">Components shipped</div>
+      </div>
+      <div class="stat reveal reveal-delay-3">
+        <div class="stat-num">Gov<span>+</span></div>
+        <div class="stat-label">High-traffic platforms</div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-text">
+        <div class="section-tag reveal">About me</div>
+        <h2 class="section-title reveal reveal-delay-1">Building the web<br /><em>with purpose</em></h2>
+        <p class="reveal reveal-delay-2">
+          I'm a seasoned Senior Software Engineer with a decade of experience turning complex requirements into
+          pixel perfect, performant front-end solutions. My work spans high-traffic government platforms,
+          global religious organizations, and enterprise SaaS. Always with an eye on what users actually experience.
+        </p>
+        <p class="reveal reveal-delay-3">
+          I believe great engineering is about more than working code. It's about accessible interfaces,
+          maintainable architecture, and teams that are set up to succeed. I've mentored engineers, driven technical
+          direction, and translated design vision into production-ready systems.
+        </p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-card reveal">
+          <div class="highlight-title">Performance</div>
+          <div class="highlight-desc">PWAs, lazy loading, serverless — optimized for real-world conditions.</div>
+        </div>
+        <div class="highlight-card reveal reveal-delay-1">
+          <div class="highlight-title">Accessibility</div>
+          <div class="highlight-desc">WCAG AAA certified implementations, screen-reader-first development.</div>
+        </div>
+        <div class="highlight-card reveal reveal-delay-2">
+          <div class="highlight-title">Architecture</div>
+          <div class="highlight-desc">Component-based systems, design tokens, scalable at any team size.</div>
+        </div>
+        <div class="highlight-card reveal reveal-delay-3">
+          <div class="highlight-title">Leadership</div>
+          <div class="highlight-desc">Mentoring engineers, driving technical direction, cross-team collaboration.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-tag reveal">Technical skills</div>
+      <h2 class="section-title reveal reveal-delay-1">The full <em>stack</em></h2>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Core Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">TypeScript</span>
+            <span class="skill-tag primary">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Sass</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-title">Frameworks & Libraries</div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Web Components</span>
+            <span class="skill-tag">Handlebars</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-2">
+          <div class="skill-group-title">Cloud & Infrastructure</div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">AWS</span>
+            <span class="skill-tag">Lambda</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">PWA</span>
+            <span class="skill-tag">Serverless</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-title">Testing & Quality</div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Cypress</span>
+            <span class="skill-tag">Mocha</span>
+            <span class="skill-tag">Jest</span>
+            <span class="skill-tag">WCAG AAA</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-2">
+          <div class="skill-group-title">Design & Systems</div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">USWDS</span>
+            <span class="skill-tag">Design Systems</span>
+            <span class="skill-tag">SEO</span>
+            <span class="skill-tag">Localization</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-3">
+          <div class="skill-group-title">Soft Skills</div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Engineering Mentorship</span>
+            <span class="skill-tag">Technical Direction</span>
+            <span class="skill-tag">UX Collaboration</span>
+            <span class="skill-tag">Client Engagement</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-tag reveal">Work history</div>
+      <h2 class="section-title reveal reveal-delay-1">Where I've <em>made an impact</em></h2>
+
+      <div class="experience-list">
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-period">2021 — Present</div>
+            <div class="exp-company">VA.gov / U.S. Department of Veterans Affairs</div>
+            <div class="exp-location">Platform Team</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-role">Platform Engineer</div>
+            <p class="exp-desc">
+              Provided operational support and built components for one of the highest-traffic government websites
+              in the U.S. Focused relentlessly on performance, accessibility, and scalability across a wide range
+              of devices and platforms. Led the adaptation of web components to align with the latest United States
+              Web Design System (USWDS), achieving WCAG AAA compliance. Collaborated with design and product teams
+              to create responsive, accessible components.
+            </p>
+            <div class="exp-tags">
+              <span class="exp-tag">React</span>
+              <span class="exp-tag">TypeScript</span>
+              <span class="exp-tag">Web Components</span>
+              <span class="exp-tag">USWDS</span>
+              <span class="exp-tag">WCAG AAA</span>
+              <span class="exp-tag">AWS</span>
+              <span class="exp-tag">GitHub Actions</span>
+              <span class="exp-tag">Cypress</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-period">2017 — 2021</div>
+            <div class="exp-company">Global Religious Organization</div>
+            <div class="exp-location">Lead Engineer</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-role">Lead Front-End Engineer</div>
+            <p class="exp-desc">
+              Managed large-scale projects and pioneered serverless architecture using AWS Lambda to optimize
+              performance for high-traffic international sites. Spearheaded the migration of legacy Handlebars
+              codebases to React, dramatically improving maintainability and developer velocity. Implemented
+              Progressive Web Application patterns, improving load times and offline reliability.
+            </p>
+            <div class="exp-tags">
+              <span class="exp-tag">React</span>
+              <span class="exp-tag">TypeScript</span>
+              <span class="exp-tag">AWS Lambda</span>
+              <span class="exp-tag">PWA</span>
+              <span class="exp-tag">Node.js</span>
+              <span class="exp-tag">SEO</span>
+              <span class="exp-tag">Localization</span>
+              <span class="exp-tag">Performance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-period">2014 — 2017</div>
+            <div class="exp-company">Web Agency</div>
+            <div class="exp-location">Front-End Engineer</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-role">Front-End Engineer</div>
+            <p class="exp-desc">
+              Worked closely with clients including Western Governors University and Graduation Alliance to build
+              user-centric web solutions. Collaborated with design teams to establish scalable web design systems,
+              ensuring consistency across platforms. Engaged directly with clients to align technical deliverables
+              with business goals and user experience standards.
+            </p>
+            <div class="exp-tags">
+              <span class="exp-tag">JavaScript</span>
+              <span class="exp-tag">HTML/CSS</span>
+              <span class="exp-tag">Design Systems</span>
+              <span class="exp-tag">Client Work</span>
+              <span class="exp-tag">Sass</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOCUS AREAS -->
+    <section id="focus">
+      <div class="section-tag reveal">What I bring</div>
+      <h2 class="section-title reveal reveal-delay-1">Areas of <em>deep expertise</em></h2>
+      <div class="focus-grid">
+        <div class="focus-card reveal">
+          <div class="focus-num">1</div>
+          <div class="focus-title">React & Component Architecture</div>
+          <p class="focus-desc">Building reusable, composable UI systems with React and TypeScript from design tokens to production-grade component libraries.</p>
+        </div>
+        <div class="focus-card reveal reveal-delay-1">
+          <div class="focus-num">2</div>
+          <div class="focus-title">Accessibility at Scale</div>
+          <p class="focus-desc">WCAG AAA implementations for government and global platforms. Making the web usable
+            for everyone, by design, not as an afterthought.</p>
+        </div>
+        <div class="focus-card reveal reveal-delay-2">
+          <div class="focus-num">3</div>
+          <div class="focus-title">Performance Engineering</div>
+          <p class="focus-desc">Serverless, PWAs, lazy loading, and bundle optimization. Ensuring fast, reliable
+            experiences for millions of users on any device.</p>
+        </div>
+        <div class="focus-card reveal">
+          <div class="focus-num">4</div>
+          <div class="focus-title">Design System Leadership</div>
+          <p class="focus-desc">Establishing and evolving design systems that scale across teams. Aligning engineering
+            and design for consistent, maintainable products.</p>
+        </div>
+        <div class="focus-card reveal reveal-delay-1">
+          <div class="focus-num">5</div>
+          <div class="focus-title">Engineering Mentorship</div>
+          <p class="focus-desc">Guiding junior and mid-level engineers through code reviews, architecture decisions, and
+            career growth conversations.</p>
+        </div>
+        <div class="focus-card reveal reveal-delay-2">
+          <div class="focus-num">6</div>
+          <div class="focus-title">Legacy Modernization</div>
+          <p class="focus-desc">Proven track record migrating legacy systems to modern stacks. Reducing tech debt while
+            keeping products live and teams productive.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-inner">
+        <div class="section-tag reveal" style="justify-content:center">Say hello</div>
+        <h2 class="contact-big reveal reveal-delay-1">Let's <em>work</em><br />together</h2>
+        <p class="contact-sub reveal reveal-delay-2">
+          Open to senior engineering roles, technical leadership, and consulting engagements.
+          I'm especially interested in products that prioritize accessibility, performance, and craft.
+        </p>
+        <div class="contact-links reveal reveal-delay-3">
+          <a href="mailto:kerrywpowell@gmail.com" class="contact-link">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0"
+              id="Layer_1" width="800px" height="800px" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+              xml:space="preserve">
+              <path fill="currentColor"
+                d="M60,8H4c-2.211,0-4,1.789-4,4v40c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V12C64,9.789,62.211,8,60,8z   M4,10h56c1.104,0,2,0.896,2,2v2.469L32,36.754L2,14.469V12C2,10.896,2.896,10,4,10z M60,54H4c-1.104,0-2-0.896-2-2v-2.808  l18.584-13.381c0.448-0.322,0.55-0.947,0.228-1.396c-0.322-0.447-0.946-0.549-1.396-0.228L2,46.729V16.961l29.403,21.842  C31.581,38.935,31.79,39,32,39s0.419-0.065,0.597-0.197L62,16.961v29.768l-17.416-12.54c-0.448-0.322-1.074-0.221-1.396,0.228  c-0.322,0.448-0.221,1.073,0.228,1.396L62,49.192V52C62,53.104,61.104,54,60,54z" />
+            </svg>
+            Email
+          </a>
+          <a href="https://github.com/powellkerry" class="contact-link" target="_blank">
+            <svg class="w-5 h-5 mr-1 inline-block align-text-bottom" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.606-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.468-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.984-.399 3.003-.404 1.018.005 2.046.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.216.694.825.576C20.565 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z">
+              </path>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://medium.com/@kerrywpowell" class="contact-link" target="_blank">
+            <svg class="w-5 h-5 mr-1 inline-block align-text-bottom" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76 1.75.79 1.75 1.76-.784 1.76-1.75 1.76zm13.5 11.28h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.89v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z">
+              </path>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 <span>Kerry W Powell</span></p>
+    <p>Senior Software Engineer · React · TypeScript · Accessibility</p>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    // Trigger hero reveals immediately
+    document.querySelectorAll('#hero .reveal, .stats-band .reveal').forEach(el => {
+      el.style.transitionDelay = el.style.transitionDelay || '0s';
+      setTimeout(() => el.classList.add('visible'), 100);
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Smooth nav highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 100) current = s.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current
+          ? 'var(--text)'
+          : '';
+      });
+    }, { passive: true });
+  </script>
+</body>
+
 </html>
