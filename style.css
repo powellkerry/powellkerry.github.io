@@ -93,19 +93,24 @@ nav {
     width: 24px;
     height: 2px;
     background: var(--accent);
-    transition: all 0.3s ease;
+}
+
+.nav-hamburger span:first-child,
+.nav-hamburger span:last-child {
+    transition: transform 0.3s ease;
 }
 
 .nav-hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(10px, 4px);
+    transform: rotate(45deg) translate(9px, 5px);
 }
 
 .nav-hamburger.active span:nth-child(2) {
     opacity: 0;
+    visibility: hidden;
 }
 
 .nav-hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -2px);
+    transform: rotate(-45deg) translate(7px, -3px);
 }
 
 /* ── HERO ── */

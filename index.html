@@ -20,12 +20,12 @@
   <!-- NAV -->
   <nav>
     <a href="#hero" class="nav-logo">Kerry W Powell</a>
-    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <ul class="nav-links">
+    <ul class="nav-links" id="primary-nav">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -417,11 +417,28 @@
     const hamburger = document.querySelector('.nav-hamburger');
     const navLinks = document.querySelector('.nav-links');
     const navItems = document.querySelectorAll('.nav-links a');
+    const mobileNavQuery = window.matchMedia('(max-width: 900px)');
+
+    const syncMobileNavA11y = () => {
+      const isMobile = mobileNavQuery.matches;
+      const isOpen = hamburger.classList.contains('active');
+
+      if (isMobile && !isOpen) {
+        navLinks.setAttribute('aria-hidden', 'true');
+        navLinks.inert = true;
+      } else {
+        navLinks.removeAttribute('aria-hidden');
+        navLinks.inert = false;
+      }
+    };
+
+    syncMobileNavA11y();
 
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('active');
       navLinks.classList.toggle('active');
-      hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active'));
+      hamburger.setAttribute('aria-expanded', hamburger.classList.contains('active') ? 'true' : 'false');
+      syncMobileNavA11y();
     });
 
     // Close menu when a link is clicked
@@ -430,8 +447,12 @@
         hamburger.classList.remove('active');
         navLinks.classList.remove('active');
         hamburger.setAttribute('aria-expanded', 'false');
+        syncMobileNavA11y();
       });
     });
+
+    window.addEventListener('resize', syncMobileNavA11y, { passive: true });
+    mobileNavQuery.addEventListener('change', syncMobileNavA11y);
 
     // Scroll reveal
     const observer = new IntersectionObserver((entries) => {
