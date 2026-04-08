@@ -179,7 +179,7 @@ nav {
 
 .hero-name {
     font-family: var(--font-display);
-    font-size: clamp(52px, 7vw, 88px);
+    font-size: clamp(50px, 7vw, 88px);
     font-weight: 300;
     line-height: 1.0;
     letter-spacing: -0.02em;
@@ -357,6 +357,10 @@ nav {
     color: var(--text);
     line-height: 1;
     margin-bottom: 6px;
+}
+
+.stat-num.border-bottom {
+    border-bottom: 4px solid var(--accent);
 }
 
 .stat-num span { color: var(--accent); }
@@ -734,6 +738,7 @@ footer p {
     font-size: 11px;
     color: var(--muted);
     letter-spacing: 0.06em;
+    text-align: center;
 }
 
 footer span { color: var(--accent); }
